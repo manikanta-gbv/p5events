@@ -1,7 +1,7 @@
 # P5 Events
 
 Static marketing and catalogue site for P5 Events, a party décor studio in
-Hyderabad. Booking runs over WhatsApp; there is no database and no server.
+Hyderabad. Booking runs over WhatsApp;
 
 ## Running it
 
