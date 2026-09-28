@@ -32,7 +32,8 @@
             "alt": "Pastel fairy themed first birthday backdrop"
           }
         ]
-      }
+      },
+      "fold": true
     },
     {
       "type": "trustStrip",
@@ -59,7 +60,8 @@
             "sub": "Match your theme at no cost"
           }
         ]
-      }
+      },
+      "fold": true
     },
     {
       "type": "categoryGrid",

@@ -65,21 +65,48 @@ const REGISTRY: Record<string, Renderer> = {
   ctaBand: section(ctaBandPropsSchema, CtaBand, 'ctaBand'),
 };
 
-export function renderSections(sections: PageSection[]): ReactNode[] {
-  return sections.map((entry, index) => {
-    const render = REGISTRY[entry.type];
+function renderOne(entry: PageSection, index: number): ReactNode {
+  const render = REGISTRY[entry.type];
 
-    // An unrecognised type renders nothing rather than crashing the page,
-    // so a stale config can never take the site down.
-    if (!render) {
-      if (process.env.NODE_ENV !== 'production') {
-        console.warn(`Unknown section type "${entry.type}" — skipped.`);
-      }
-      return null;
+  // An unrecognised type renders nothing rather than crashing the page,
+  // so a stale config can never take the site down.
+  if (!render) {
+    if (process.env.NODE_ENV !== 'production') {
+      console.warn(`Unknown section type "${entry.type}" — skipped.`);
     }
+    return null;
+  }
 
-    return render(entry.props, `${entry.type}-${index}`);
-  });
+  return render(entry.props, `${entry.type}-${index}`);
+}
+
+export function renderSections(sections: PageSection[]): ReactNode[] {
+  const out: ReactNode[] = [];
+  let i = 0;
+
+  // Leading sections marked `fold` in the page config share the first
+  // screen: the wrapper is exactly one viewport tall and the hero grows to
+  // fill whatever the others leave. A fixed hero height cannot do this —
+  // on a tall window the next section creeps above the fold, and on a short
+  // one the strip below it gets pushed off.
+  if (sections[0]?.fold) {
+    const group: ReactNode[] = [];
+    while (i < sections.length && sections[i].fold) {
+      group.push(renderOne(sections[i], i));
+      i += 1;
+    }
+    out.push(
+      <div key="fold" className="flex flex-col md:min-h-svh">
+        {group}
+      </div>,
+    );
+  }
+
+  for (; i < sections.length; i += 1) {
+    out.push(renderOne(sections[i], i));
+  }
+
+  return out;
 }
 
 export const knownSectionTypes = Object.keys(REGISTRY);

@@ -25,7 +25,7 @@ export function Hero({
   const { proof, location } = settings;
 
   return (
-    <section className="relative isolate min-h-[620px] overflow-hidden bg-ink md:h-[772px]">
+    <section className="relative isolate flex min-h-[620px] flex-col overflow-hidden bg-ink md:min-h-[520px] md:flex-1">
       <HeroSlideshow
         slides={slides}
         slideSeconds={theme.hero.slideSeconds}
@@ -43,7 +43,7 @@ export function Hero({
         }}
       />
 
-      <div className="relative z-20 mx-auto flex min-h-[620px] max-w-shell flex-col items-center justify-center px-5 pb-24 pt-32 text-center md:h-[772px] md:px-20 md:pb-28 md:pt-40">
+      <div className="relative z-20 mx-auto flex w-full max-w-shell flex-1 flex-col items-center justify-center px-5 pb-24 pt-32 text-center md:px-20 md:pb-28 md:pt-40">
         <p className="inline-flex items-center gap-2 rounded-pill border border-gold/45 px-4 py-2 text-[11px] uppercase tracking-[0.16em] text-goldSoft md:text-xs">
           <Icon name="sparkle" size={13} />
           {eyebrow}

@@ -44,10 +44,17 @@ function parse<T extends z.ZodTypeAny>(
   return result.data;
 }
 
-/** Memoise so a page that reads settings five times reads the file once. */
+/**
+ * Memoise so a page that reads settings five times reads the file once.
+ *
+ * Skipped in development: the cache lives for the life of the process, so
+ * without this an edit to content/ does not show up until the dev server is
+ * restarted, which is a confusing way to lose ten minutes.
+ */
 function once<T>(fn: () => T): () => T {
   let cached: { value: T } | null = null;
   return () => {
+    if (process.env.NODE_ENV === 'development') return fn();
     if (!cached) cached = { value: fn() };
     return cached.value;
   };

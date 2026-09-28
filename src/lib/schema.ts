@@ -198,6 +198,8 @@ export const pageSchema = z.object({
       z.object({
         type: z.string().min(1),
         props: z.record(z.unknown()).optional(),
+        // Leading sections marked `fold` share the first viewport.
+        fold: z.boolean().optional(),
       }),
     )
     .min(1),
