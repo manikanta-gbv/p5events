@@ -1,7 +1,67 @@
+# Dependencies
 node_modules/
+.pnp
+.pnp.*
+
+# Next.js build output
 .next/
 out/
-.env*.local
-*.tsbuildinfo
+build/
+dist/
 next-env.d.ts
+
+# Generated responsive image variants.
+# scripts/generate-image-variants.mjs recreates these on every build, so they
+# are build output rather than source. Committing them would double the weight
+# of public/images for no benefit.
 public/images/**/*-[0-9]*w.webp
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Testing and coverage
+coverage/
+.nyc_output/
+
+# TypeScript
+*.tsbuildinfo
+
+# Caches
+.eslintcache
+.cache/
+.turbo/
+.parcel-cache/
+
+# Cloudflare / Wrangler.
+# wrangler.jsonc IS committed — it is what stops wrangler auto-detecting
+# Next.js and installing the OpenNext SSR adapter. Everything below is
+# generated or local-only.
+.wrangler/
+.open-next/
+open-next.config.ts
+.dev.vars
+.vercel
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editors and OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local agent state (keep the dev-server launch config)
+.claude/*
+!.claude/launch.json
