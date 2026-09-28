@@ -1,0 +1,21 @@
+{
+  "slug": "midnight-surprise-room",
+  "title": "Midnight surprise room",
+  "category": "anniversary",
+  "price": 3499,
+  "summary": "Canopy lights, petal work, candle path",
+  "images": ["/images/packages/midnight-surprise-room.webp"],
+  "imageAlt": "Romantic bedroom decoration with fairy lights and rose petals",
+  "inclusions": [
+    "Fairy-light canopy over the bed",
+    "Rose petal work on the bed and floor",
+    "Candle path to the room",
+    "Heart foil balloons",
+    "Late-night setup slot available"
+  ],
+  "venues": ["home"],
+  "palette": ["bright"],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}

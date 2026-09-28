@@ -1,0 +1,111 @@
+{
+  "brand": {
+    "name": "P5 Events",
+    "shortName": "P5",
+    "wordmark": "Events",
+    "tagline": "Party décor studio",
+    "logoMark": "/images/brand/p5-logo-mark.png",
+    "logoFull": "/images/brand/p5-logo-full.png"
+  },
+  "location": {
+    "city": "Visakhapatnam",
+    "region": "Andhra Pradesh",
+    "country": "IN",
+    "addressLine": "[studio address]",
+    "postalCode": "[pincode]"
+  },
+  "contact": {
+    "phone": "+91 77994 32131",
+    "phoneAlt": "+91 79895 31332",
+    "email": "p5events72@gmail.com",
+    "whatsappNumber": "917799432131",
+    "whatsappBusinessUrl": "https://wa.me/message/XBJY3K6NH6RQF1"
+  },
+  "social": {
+    "instagram": "https://www.instagram.com/p5.events/",
+    "youtube": "https://www.youtube.com/@p5events995",
+    "googleBusiness": "https://p5-events.business.site/"
+  },
+  "proof": {
+    "yearsTrading": "[N]",
+    "setupsCompleted": "[N]+",
+    "foundedYear": "[year]"
+  },
+  "booking": {
+    "mode": "whatsapp",
+    "messageTemplate": "Hi {{brand}}! I would like to book {{package}}{{price}} for {{date}} ({{slot}}) at {{area}}. Please confirm availability.",
+    "genericTemplate": "Hi {{brand}}! I would like to plan a celebration. Here is what I have in mind:",
+    "slots": [
+      "Morning · 8am – 12pm",
+      "Afternoon · 12pm – 4pm",
+      "Evening · 4pm – 8pm",
+      "Midnight surprise"
+    ]
+  },
+  "filters": {
+    "venues": [
+      {
+        "slug": "home",
+        "label": "Home or apartment"
+      },
+      {
+        "slug": "banquet-hall",
+        "label": "Banquet hall"
+      },
+      {
+        "slug": "terrace",
+        "label": "Terrace or garden"
+      },
+      {
+        "slug": "restaurant",
+        "label": "Restaurant"
+      }
+    ],
+    "palettes": [
+      {
+        "slug": "pastel",
+        "label": "Pastel",
+        "swatch": "#F2C9D4"
+      },
+      {
+        "slug": "rose-gold",
+        "label": "Rose gold",
+        "swatch": "#D9A38B"
+      },
+      {
+        "slug": "black-gold",
+        "label": "Black and gold",
+        "swatch": "#2B2B2B"
+      },
+      {
+        "slug": "blue",
+        "label": "Blue",
+        "swatch": "#8FB3DB"
+      },
+      {
+        "slug": "neutral",
+        "label": "Neutral",
+        "swatch": "#D9CDBC"
+      },
+      {
+        "slug": "bright",
+        "label": "Bright",
+        "swatch": "#E9564B"
+      }
+    ],
+    "budgetMin": 1999,
+    "budgetMax": 25000
+  },
+  "currency": {
+    "code": "INR",
+    "symbol": "₹",
+    "locale": "en-IN"
+  },
+  "seo": {
+    "titleTemplate": "%s | P5 Events",
+    "defaultTitle": "P5 Events — party décor and event setups in Visakhapatnam",
+    "defaultDescription": "Balloon décor, themed backdrops and complete party setups for homes, halls and terraces across Visakhapatnam. Fixed prices, on-time setup.",
+    "siteUrl": "https://p5events.pages.dev",
+    "ogImage": "/images/brand/og-default.jpg"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "slug": "butterfly-fairy-one",
+  "title": "Butterfly fairy one-derful",
+  "category": "naming-ceremony",
+  "price": 12999,
+  "strikePrice": 14999,
+  "summary": "Printed backdrop, ONE letters, butterfly props, cake table",
+  "images": ["/images/packages/butterfly-fairy-one.webp"],
+  "imageAlt": "Pastel fairy and butterfly themed first birthday backdrop",
+  "inclusions": [
+    "10 ft printed backdrop in pastel fairy artwork",
+    "Freestanding ONE letters",
+    "Butterfly and floral cutout props",
+    "280 balloons in lilac, pink and cream",
+    "Cake table with two plinths",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["banquet-hall", "terrace"],
+  "palette": ["pastel"],
+  "setupHours": 4,
+  "featured": false,
+  "published": true
+}

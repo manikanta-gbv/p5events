@@ -1,0 +1,132 @@
+{
+  "sections": [
+    {
+      "type": "hero",
+      "props": {
+        "eyebrow": "Party décor studio · Visakhapatnam",
+        "headline": "Set up beautifully. Celebrated properly.",
+        "sub": "Balloon décor, themed backdrops and complete party setups — designed for your space, installed by our own team, cleared away after.",
+        "primaryCta": {
+          "label": "See packages & prices",
+          "href": "/packages"
+        },
+        "secondaryCta": {
+          "label": "Browse our work",
+          "href": "/gallery"
+        },
+        "slides": [
+          {
+            "image": "/images/gallery/hero-terrace.webp",
+            "alt": "Gold and blush balloon arch set up beside a poolside terrace"
+          },
+          {
+            "image": "/images/gallery/hero-garden-one.webp",
+            "alt": "Outdoor first birthday stage with a floral arch"
+          },
+          {
+            "image": "/images/gallery/hero-bride-rose.webp",
+            "alt": "Rose gold bride-to-be arch with a printed panel"
+          },
+          {
+            "image": "/images/gallery/hero-fairy-one.webp",
+            "alt": "Pastel fairy themed first birthday backdrop"
+          }
+        ]
+      }
+    },
+    {
+      "type": "trustStrip",
+      "props": {
+        "items": [
+          {
+            "icon": "check",
+            "title": "Fixed, itemised prices",
+            "sub": "What you see is what you pay"
+          },
+          {
+            "icon": "clock",
+            "title": "On-time setup",
+            "sub": "We arrive ahead of your slot"
+          },
+          {
+            "icon": "broom",
+            "title": "We clear up after",
+            "sub": "Included on most packages"
+          },
+          {
+            "icon": "sparkle",
+            "title": "Colours customised free",
+            "sub": "Match your theme at no cost"
+          }
+        ]
+      }
+    },
+    {
+      "type": "categoryGrid",
+      "props": {
+        "eyebrow": "Browse by occasion",
+        "heading": "What are we celebrating?",
+        "linkLabel": "All packages",
+        "linkHref": "/packages"
+      }
+    },
+    {
+      "type": "packageGrid",
+      "props": {
+        "eyebrow": "Ready to book",
+        "heading": "Most booked this month",
+        "filter": "featured",
+        "limit": 4
+      }
+    },
+    {
+      "type": "steps",
+      "props": {
+        "heading": "How a booking works",
+        "steps": [
+          {
+            "title": "Pick a setup",
+            "body": "Choose a package or send us a reference picture on WhatsApp."
+          },
+          {
+            "title": "Confirm date & slot",
+            "body": "We reply with availability and hold the slot for you."
+          },
+          {
+            "title": "We set up",
+            "body": "Our team arrives ahead of time and installs everything in your space."
+          },
+          {
+            "title": "Celebrate & leave it to us",
+            "body": "Where the package includes it, we come back and clear everything away."
+          }
+        ]
+      }
+    },
+    {
+      "type": "galleryStrip",
+      "props": {
+        "eyebrow": "Recent work",
+        "heading": "Setups from around the city",
+        "linkLabel": "See the full gallery",
+        "linkHref": "/gallery",
+        "limit": 4
+      }
+    },
+    {
+      "type": "areas",
+      "props": {
+        "heading": "Areas we set up in"
+      }
+    },
+    {
+      "type": "ctaBand",
+      "props": {
+        "heading": "Tell us the date. We will take it from there.",
+        "body": "Send a reference picture, your venue and the date — we will reply with a fixed quote, usually within the hour.",
+        "image": "/images/categories/wall-backdrop.webp",
+        "imageAlt": "Pastel balloon wall decoration with warm lights"
+      }
+    }
+  ]
+}

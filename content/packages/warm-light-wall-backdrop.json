@@ -1,0 +1,20 @@
+{
+  "slug": "warm-light-wall-backdrop",
+  "title": "Warm-light wall backdrop",
+  "category": "wall-backdrop",
+  "price": 2999,
+  "summary": "Fairy-light curtain, 120 balloons, foil name",
+  "images": ["/images/packages/warm-light-wall-backdrop.webp"],
+  "imageAlt": "Pastel balloon wall backdrop with warm fairy lights",
+  "inclusions": [
+    "Fairy-light curtain across the wall",
+    "120 balloons in your two chosen colours",
+    "Foil letter name or Happy Birthday banner",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home"],
+  "palette": ["pastel"],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}

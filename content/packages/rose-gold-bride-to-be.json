@@ -1,0 +1,23 @@
+{
+  "slug": "rose-gold-bride-to-be",
+  "title": "Rose gold bride-to-be arch",
+  "category": "bride-to-be",
+  "price": 6499,
+  "strikePrice": 7999,
+  "summary": "Printed panel, 150 balloons, floral cluster, two plinths",
+  "images": ["/images/packages/rose-gold-bride-to-be.webp"],
+  "imageAlt": "Rose gold bride to be arch with a printed panel",
+  "inclusions": [
+    "6 × 7 ft printed backdrop panel with your text",
+    "150 balloons in rose gold, blush and chrome",
+    "Artificial floral cluster on the arch",
+    "Two cylinder plinths for the cake and props",
+    "Warm focus lighting on the panel",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home", "banquet-hall", "terrace"],
+  "palette": ["rose-gold", "pastel"],
+  "setupHours": 3,
+  "featured": true,
+  "published": true
+}

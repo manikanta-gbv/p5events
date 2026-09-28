@@ -1,0 +1,15 @@
+{
+  "note": "Replace with the areas P5 Events actually covers in Visakhapatnam.",
+  "areas": [
+    { "slug": "mvp-colony", "name": "MVP Colony" },
+    { "slug": "seethammadhara", "name": "Seethammadhara" },
+    { "slug": "dwaraka-nagar", "name": "Dwaraka Nagar" },
+    { "slug": "madhurawada", "name": "Madhurawada" },
+    { "slug": "rushikonda", "name": "Rushikonda" },
+    { "slug": "beach-road", "name": "Beach Road" },
+    { "slug": "gajuwaka", "name": "Gajuwaka" },
+    { "slug": "akkayyapalem", "name": "Akkayyapalem" },
+    { "slug": "asilmetta", "name": "Asilmetta" },
+    { "slug": "pm-palem", "name": "PM Palem" }
+  ]
+}

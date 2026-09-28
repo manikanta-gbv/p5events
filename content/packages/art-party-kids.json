@@ -1,0 +1,23 @@
+{
+  "slug": "art-party-kids",
+  "title": "Paint and art party setup",
+  "category": "kids-theme",
+  "price": 8999,
+  "strikePrice": 10999,
+  "summary": "Printed panel, colour splash props, 200 balloons, cake table",
+  "images": ["/images/packages/art-party.webp"],
+  "imageAlt": "Bright primary coloured art themed birthday setup",
+  "inclusions": [
+    "8 × 6 ft themed backdrop panel with your child's name",
+    "200 balloons in primary brights",
+    "Paint-splash cutouts and easel props",
+    "Cake table with themed cloth and two plinths",
+    "Age foil number and happy birthday banner",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home", "banquet-hall", "terrace"],
+  "palette": ["bright"],
+  "setupHours": 4,
+  "featured": true,
+  "published": true
+}

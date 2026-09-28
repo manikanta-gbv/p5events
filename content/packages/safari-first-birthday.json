@@ -1,0 +1,23 @@
+{
+  "slug": "safari-first-birthday",
+  "title": "Jungle safari first birthday",
+  "category": "kids-theme",
+  "price": 16999,
+  "strikePrice": 19999,
+  "summary": "Green wall stage, animal cutouts, LED name, cake table",
+  "images": ["/images/packages/safari-first-birthday.webp"],
+  "imageAlt": "Jungle safari themed birthday stage with animal cutouts",
+  "inclusions": [
+    "14 ft green wall stage backdrop",
+    "Eight safari animal cutouts",
+    "LED name letters",
+    "350 balloons in jungle greens and browns",
+    "Cake table with themed cloth",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["banquet-hall"],
+  "palette": ["bright"],
+  "setupHours": 5,
+  "featured": false,
+  "published": true
+}

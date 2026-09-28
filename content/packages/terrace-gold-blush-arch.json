@@ -1,0 +1,21 @@
+{
+  "slug": "terrace-gold-blush-arch",
+  "title": "Terrace gold and blush arch",
+  "category": "birthday",
+  "price": 9499,
+  "summary": "Custom name panel, 220 balloons, cake plinth",
+  "images": ["/images/packages/terrace-gold-blush-arch.webp"],
+  "imageAlt": "Gold and blush balloon arch beside a poolside terrace",
+  "inclusions": [
+    "Arched panel with your name and age printed",
+    "220 balloons in blush, cream and chrome gold",
+    "Fluted cake plinth",
+    "Outdoor-rated fixings for terrace setups",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["terrace", "home"],
+  "palette": ["rose-gold"],
+  "setupHours": 4,
+  "featured": false,
+  "published": true
+}

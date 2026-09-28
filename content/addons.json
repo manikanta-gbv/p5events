@@ -1,0 +1,8 @@
+{
+  "addons": [
+    { "slug": "photographer", "title": "Photographer · 2 hours", "price": 4500 },
+    { "slug": "cold-pyro", "title": "Cold pyro & fog entry", "price": 3000 },
+    { "slug": "character-visit", "title": "Character visit · 30 min", "price": 2500 },
+    { "slug": "photo-booth", "title": "360° photo booth · 2 hours", "price": 7999 }
+  ]
+}

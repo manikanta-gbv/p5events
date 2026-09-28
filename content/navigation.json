@@ -1,0 +1,78 @@
+{
+  "header": [
+    {
+      "label": "Occasions",
+      "href": "/occasions"
+    },
+    {
+      "label": "Packages",
+      "href": "/packages"
+    },
+    {
+      "label": "Our work",
+      "href": "/gallery"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact"
+    }
+  ],
+  "headerCta": {
+    "label": "Chat on WhatsApp",
+    "icon": "whatsapp"
+  },
+  "footer": [
+    {
+      "heading": "Occasions",
+      "links": [
+        {
+          "label": "Birthday",
+          "href": "/occasions/birthday"
+        },
+        {
+          "label": "First birthday",
+          "href": "/occasions/first-birthday"
+        },
+        {
+          "label": "Baby shower",
+          "href": "/occasions/baby-shower"
+        },
+        {
+          "label": "Anniversary",
+          "href": "/occasions/anniversary"
+        }
+      ]
+    },
+    {
+      "heading": "Company",
+      "links": [
+        {
+          "label": "Our work",
+          "href": "/gallery"
+        },
+        {
+          "label": "About",
+          "href": "/about"
+        },
+        {
+          "label": "Contact",
+          "href": "/contact"
+        },
+        {
+          "label": "Terms & refunds",
+          "href": "/terms"
+        }
+      ]
+    }
+  ],
+  "legal": [
+    {
+      "label": "Privacy",
+      "href": "/privacy"
+    },
+    {
+      "label": "Terms",
+      "href": "/terms"
+    }
+  ]
+}

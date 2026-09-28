@@ -1,0 +1,22 @@
+{
+  "slug": "pastel-ring-at-home",
+  "title": "Pastel ring at home",
+  "category": "ring-decor",
+  "price": 4999,
+  "strikePrice": 5999,
+  "summary": "Six-foot ring, chrome and pastel mix, neon sign, floor balloons",
+  "images": ["/images/packages/pastel-ring-at-home.webp"],
+  "imageAlt": "Pastel ring balloon decoration in a living room",
+  "inclusions": [
+    "6 ft metal ring dressed in pastel and chrome balloons",
+    "Happy Birthday neon sign",
+    "Butterfly or floral accents in your colour",
+    "Loose floor balloons to finish the base",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home", "restaurant"],
+  "palette": ["pastel"],
+  "setupHours": 2,
+  "featured": true,
+  "published": true
+}

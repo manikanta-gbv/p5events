@@ -1,0 +1,85 @@
+{
+  "categories": [
+    {
+      "slug": "birthday",
+      "name": "Birthday",
+      "blurb": "Arches, backdrops and cake-table styling for birthdays at home or at a hall.",
+      "image": "/images/categories/birthday.webp",
+      "imageAlt": "Black, white and gold balloon arch for an adult birthday",
+      "order": 1,
+      "published": true
+    },
+    {
+      "slug": "first-birthday",
+      "name": "First birthday",
+      "blurb": "Full stage setups with printed panels, LED letters and props for the first big one.",
+      "image": "/images/categories/first-birthday.webp",
+      "imageAlt": "Outdoor first birthday stage with a floral arch",
+      "order": 2,
+      "published": true
+    },
+    {
+      "slug": "kids-theme",
+      "name": "Kids theme parties",
+      "blurb": "Safari, art, jungle and fairy themes built around your child's favourite.",
+      "image": "/images/categories/kids-theme.webp",
+      "imageAlt": "Jungle safari themed birthday stage with animal cutouts",
+      "order": 3,
+      "published": true
+    },
+    {
+      "slug": "baby-shower",
+      "name": "Baby shower & welcome baby",
+      "blurb": "Soft pastel setups for seemantham, welcome-baby and naming celebrations.",
+      "image": "/images/categories/baby-shower.webp",
+      "imageAlt": "Pink welcome baby balloon decoration",
+      "order": 4,
+      "published": true
+    },
+    {
+      "slug": "anniversary",
+      "name": "Anniversary & romance",
+      "blurb": "Candle paths, canopy lights and petal work for anniversaries and surprises.",
+      "image": "/images/categories/anniversary.webp",
+      "imageAlt": "Romantic room decoration with fairy lights and rose petals",
+      "order": 5,
+      "published": true
+    },
+    {
+      "slug": "bride-to-be",
+      "name": "Bride to be",
+      "blurb": "Printed panels, floral clusters and plinths for the shoot everyone posts.",
+      "image": "/images/categories/bride-to-be.webp",
+      "imageAlt": "Neutral boho bride to be balloon arch with pampas grass",
+      "order": 6,
+      "published": true
+    },
+    {
+      "slug": "ring-decor",
+      "name": "Ring & arch décor",
+      "blurb": "The classic six-foot ring, in any palette, set up in your living room.",
+      "image": "/images/categories/ring-decor.webp",
+      "imageAlt": "Pastel ring balloon decoration in a living room",
+      "order": 7,
+      "published": true
+    },
+    {
+      "slug": "wall-backdrop",
+      "name": "Wall & backdrop décor",
+      "blurb": "Fairy-light curtains, foil names and balloon walls for smaller spaces.",
+      "image": "/images/categories/wall-backdrop.webp",
+      "imageAlt": "Pastel balloon wall backdrop with warm lights",
+      "order": 8,
+      "published": true
+    },
+    {
+      "slug": "naming-ceremony",
+      "name": "Naming ceremony",
+      "blurb": "Traditional ceremonies styled with a modern backdrop and cake table.",
+      "image": "/images/categories/naming-ceremony.webp",
+      "imageAlt": "Pastel fairy themed naming ceremony stage",
+      "order": 9,
+      "published": true
+    }
+  ]
+}

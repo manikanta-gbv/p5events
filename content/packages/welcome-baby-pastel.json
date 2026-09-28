@@ -1,0 +1,20 @@
+{
+  "slug": "welcome-baby-pastel",
+  "title": "Welcome baby pastel arch",
+  "category": "baby-shower",
+  "price": 2499,
+  "summary": "Printed welcome panel, 140 balloons, cloud accents",
+  "images": ["/images/packages/welcome-baby-pastel.webp"],
+  "imageAlt": "Pink welcome baby balloon decoration with cloud accents",
+  "inclusions": [
+    "Printed Welcome Baby panel",
+    "140 balloons in pink, white and chrome silver",
+    "Cloud balloon accents",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home", "banquet-hall"],
+  "palette": ["pastel"],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}

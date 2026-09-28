@@ -1,0 +1,22 @@
+{
+  "slug": "monochrome-milestone-arch",
+  "title": "Monochrome milestone arch",
+  "category": "birthday",
+  "price": 5499,
+  "strikePrice": 6999,
+  "summary": "Black, white and chrome gold, 180 balloons, age foil",
+  "images": ["/images/packages/monochrome-milestone-arch.webp"],
+  "imageAlt": "Black, white and gold balloon arch for a milestone birthday",
+  "inclusions": [
+    "Circular backdrop panel in matte black",
+    "180 balloons in black, white and chrome gold",
+    "Age foil number in gold",
+    "Dried floral accents on the arch",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["home", "banquet-hall", "restaurant"],
+  "palette": ["black-gold"],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}

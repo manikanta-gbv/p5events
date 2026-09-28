@@ -1,0 +1,16 @@
+{
+  "items": [
+    { "image": "/images/gallery/hero-garden-one.webp", "alt": "Outdoor first birthday stage with a floral arch", "category": "first-birthday" },
+    { "image": "/images/gallery/butterfly-stage.webp", "alt": "Purple butterfly themed first birthday stage", "category": "first-birthday" },
+    { "image": "/images/gallery/hero-bride-rose.webp", "alt": "Rose gold bride to be arch with a printed panel", "category": "bride-to-be" },
+    { "image": "/images/gallery/bride-mauve.webp", "alt": "Mauve and ivory bride to be arch", "category": "bride-to-be" },
+    { "image": "/images/gallery/hero-terrace.webp", "alt": "Gold and blush balloon arch beside a poolside terrace", "category": "birthday" },
+    { "image": "/images/gallery/eighteen-gold.webp", "alt": "Blue and gold eighteenth birthday arch", "category": "birthday" },
+    { "image": "/images/gallery/anniversary-pm.webp", "alt": "Rose gold twenty-fifth anniversary backdrop", "category": "anniversary" },
+    { "image": "/images/gallery/hero-fairy-one.webp", "alt": "Pastel fairy themed first birthday backdrop", "category": "naming-ceremony" },
+    { "image": "/images/gallery/purple-one.webp", "alt": "Purple and white butterfly ONE stage", "category": "first-birthday" },
+    { "image": "/images/gallery/teddy-stage.webp", "alt": "Pastel stage with teddy bears and butterflies", "category": "first-birthday" },
+    { "image": "/images/gallery/unicorn-sixth.webp", "alt": "Unicorn themed sixth birthday backdrop", "category": "kids-theme" },
+    { "image": "/images/gallery/zehra-garden.webp", "alt": "Garden butterfly stage lit at night", "category": "first-birthday" }
+  ]
+}

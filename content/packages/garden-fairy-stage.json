@@ -1,0 +1,24 @@
+{
+  "slug": "garden-fairy-stage",
+  "title": "Garden fairy first birthday",
+  "category": "first-birthday",
+  "price": 18999,
+  "strikePrice": 23999,
+  "summary": "16 ft stage, custom flex, LED letters, props, cake table",
+  "images": ["/images/packages/garden-fairy-stage.webp"],
+  "imageAlt": "Outdoor first birthday stage with a floral arch and fairy props",
+  "inclusions": [
+    "16 ft stage backdrop with custom printed flex",
+    "Freestanding LED ONE letters",
+    "400 balloons across the arch and floor",
+    "Fairy and floral cutout props",
+    "Cake table with three round plinths",
+    "Focus lighting across the full stage",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["banquet-hall", "terrace"],
+  "palette": ["pastel"],
+  "setupHours": 5,
+  "featured": true,
+  "published": true
+}

@@ -1,0 +1,58 @@
+{
+  "name": "Ink & Blush",
+  "colors": {
+    "ink": "#1C1720",
+    "inkSoft": "#2E2731",
+    "inkLine": "#332C38",
+    "canvas": "#FBF7F3",
+    "surface": "#FFFFFF",
+    "shade": "#ECE4DC",
+    "line": "#ECE4DC",
+    "lineStrong": "#DCD2C8",
+    "accent": "#B8365A",
+    "accentDark": "#8E2645",
+    "accentTint": "#F3E4E8",
+    "gold": "#C8A86A",
+    "goldSoft": "#D9C08C",
+    "body": "#4A424C",
+    "muted": "#6B6069",
+    "subtle": "#8A8089",
+    "onInk": "#FBF7F3",
+    "onInkMuted": "#B7ACB2",
+    "success": "#2F7D52",
+    "successTint": "#E3F1E8",
+    "successDark": "#1F5F3C",
+    "star": "#C08A2E",
+    "navGlass": "#141017",
+    "onInkStrong": "#EDE6E9",
+    "onAccent": "#FBE7EC",
+    "heroSub": "#D6CBD2",
+    "heroMeta": "#BEB1B9",
+    "heroDivider": "#7E7280"
+  },
+  "fonts": {
+    "display": {
+      "family": "Fraunces",
+      "fallback": "Georgia, serif",
+      "googleFontsQuery": "Fraunces:opsz,wght@9..144,400;9..144,600"
+    },
+    "body": {
+      "family": "Plus Jakarta Sans",
+      "fallback": "system-ui, sans-serif",
+      "googleFontsQuery": "Plus+Jakarta+Sans:wght@400;500;600"
+    }
+  },
+  "radii": {
+    "sm": "10px",
+    "md": "12px",
+    "lg": "16px",
+    "xl": "22px",
+    "pill": "999px"
+  },
+  "hero": {
+    "slideSeconds": 6,
+    "fadeMs": 1400,
+    "kenBurns": true,
+    "kenBurnsScale": 1.085
+  }
+}

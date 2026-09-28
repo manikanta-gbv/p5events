@@ -1,0 +1,12 @@
+{
+  "sections": [
+    {
+      "type": "socialStrip",
+      "props": {
+        "eyebrow": "Reels & videos",
+        "heading": "Watch a setup come together",
+        "body": "New reels most weeks — themes, timelapses and finished setups."
+      }
+    }
+  ]
+}

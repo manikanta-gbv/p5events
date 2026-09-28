@@ -1,0 +1,24 @@
+{
+  "faqs": [
+    {
+      "question": "Can we change the colours or the theme?",
+      "answer": "Yes. Tell us the theme and colours when you book and we will match them at no extra cost, as long as the material count stays the same."
+    },
+    {
+      "question": "How much space does a setup need?",
+      "answer": "A ring or wall setup needs about 8 ft of clear wall and 4 ft of depth. Full stage setups need 14 to 16 ft of width. Send us a photo of your space and we will confirm."
+    },
+    {
+      "question": "What is your cancellation policy?",
+      "answer": "[Add your cancellation and reschedule terms here.]"
+    },
+    {
+      "question": "Do you set up outside Visakhapatnam?",
+      "answer": "[Confirm which outstation locations you cover and any travel charge.]"
+    },
+    {
+      "question": "How far in advance should we book?",
+      "answer": "[Add your typical lead time. Note any same-day or next-day options.]"
+    }
+  ]
+}

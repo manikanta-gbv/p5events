@@ -1,0 +1,22 @@
+{
+  "note": "Video ids from the P5 Events YouTube channel. Paste a new id to feature it.",
+  "channelId": "UCYYVZ6jJ41P6MB24mCwiCgg",
+  "videos": [
+    {
+      "id": "oH2-ccoNcHA",
+      "label": "Birthday entrance"
+    },
+    {
+      "id": "8a-GTCp_56E",
+      "label": "Wedding décor"
+    },
+    {
+      "id": "txNxBWy-VuY",
+      "label": "Naming ceremony"
+    },
+    {
+      "id": "NVWYUprgVIY",
+      "label": "Surprise birthday"
+    }
+  ]
+}

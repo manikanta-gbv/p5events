@@ -1,0 +1,21 @@
+{
+  "slug": "boho-neutral-arch",
+  "title": "Boho neutral arch",
+  "category": "bride-to-be",
+  "price": 7499,
+  "summary": "Sand and ivory palette, pampas grass, twin plinths",
+  "images": ["/images/packages/boho-neutral-arch.webp"],
+  "imageAlt": "Neutral boho balloon arch with pampas grass",
+  "inclusions": [
+    "Fluted arch panel in ivory",
+    "160 balloons in sand, ivory and mocha",
+    "Pampas grass and dried palm styling",
+    "Two fluted plinths",
+    "Setup and teardown by our own team"
+  ],
+  "venues": ["terrace", "banquet-hall"],
+  "palette": ["neutral"],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}

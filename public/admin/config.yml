@@ -1,0 +1,239 @@
+# This single file defines the whole admin UI the owner sees.
+# Adding a field to a package means editing this file and src/lib/schema.ts —
+# there is no admin code to write.
+
+backend:
+  name: github
+  repo: OWNER/REPO # ← set to the GitHub repo once it exists
+  branch: main
+  # Sveltia needs an OAuth callback. Deploy the authenticator to a Cloudflare
+  # Worker and put its URL here. See docs/CMS-SETUP.md.
+  base_url: https://REPLACE-WITH-YOUR-AUTH-WORKER.workers.dev
+
+publish_mode: simple # commits straight to main; swap to editorial_workflow for review
+
+media_folder: public/images
+public_folder: /images
+
+# Large phone uploads are the main risk of keeping images in git. Resize and
+# convert on the way in so a 5 MB photo lands as roughly 200 KB.
+media_libraries:
+  default:
+    config:
+      max_file_size: 5242880
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+          width: 1600
+
+collections:
+  - name: packages
+    label: Packages
+    label_singular: Package
+    folder: content/packages
+    create: true
+    delete: true
+    identifier_field: title
+    slug: '{{fields.slug}}'
+    summary: '{{title}} — ₹{{price}}'
+    sortable_fields: [title, price, category]
+    fields:
+      - { name: title, label: Package name, widget: string }
+      - { name: slug, label: URL slug, widget: string, hint: 'lowercase-with-hyphens' }
+      - name: category
+        label: Occasion
+        widget: relation
+        collection: settings
+        file: categories
+        search_fields: [categories.*.name]
+        value_field: categories.*.slug
+        display_fields: [categories.*.name]
+      - { name: price, label: Price (₹), widget: number, value_type: int, min: 1 }
+      - name: strikePrice
+        label: Was price (₹)
+        widget: number
+        value_type: int
+        required: false
+        hint: Leave empty if there is no discount. Must be higher than the price.
+      - { name: summary, label: One-line summary, widget: string }
+      - name: images
+        label: Photos
+        widget: list
+        field: { name: image, label: Photo, widget: image }
+      - { name: imageAlt, label: Photo description, widget: string, hint: 'For screen readers and search.' }
+      - name: inclusions
+        label: What is included
+        widget: list
+        field: { name: item, label: Item, widget: string }
+      - name: venues
+        label: Venue types
+        widget: select
+        multiple: true
+        options:
+          - { label: Home or apartment, value: home }
+          - { label: Banquet hall, value: banquet-hall }
+          - { label: Terrace or garden, value: terrace }
+          - { label: Restaurant, value: restaurant }
+      - name: palette
+        label: Palette
+        widget: select
+        multiple: true
+        options:
+          - { label: Pastel, value: pastel }
+          - { label: Rose gold, value: rose-gold }
+          - { label: Black and gold, value: black-gold }
+          - { label: Blue, value: blue }
+          - { label: Neutral, value: neutral }
+          - { label: Bright, value: bright }
+      - { name: setupHours, label: Setup hours, widget: number, value_type: float, min: 0.5 }
+      - { name: featured, label: Show on the home page, widget: boolean, default: false }
+      - { name: published, label: Live on the site, widget: boolean, default: true }
+
+  - name: settings
+    label: Site content
+    files:
+      - name: categories
+        label: Occasions
+        file: content/categories.json
+        fields:
+          - name: categories
+            label: Occasions
+            widget: list
+            fields:
+              - { name: name, label: Name, widget: string }
+              - { name: slug, label: URL slug, widget: string }
+              - { name: blurb, label: Short description, widget: text }
+              - { name: image, label: Photo, widget: image }
+              - { name: imageAlt, label: Photo description, widget: string }
+              - { name: order, label: Order, widget: number, value_type: int }
+              - { name: published, label: Live on the site, widget: boolean, default: true }
+
+      - name: general
+        label: Business details
+        file: content/settings.json
+        fields:
+          - name: brand
+            label: Brand
+            widget: object
+            fields:
+              - { name: name, label: Business name, widget: string }
+              - { name: shortName, label: Short name, widget: string }
+              - { name: wordmark, label: Wordmark, widget: string }
+              - { name: tagline, label: Tagline, widget: string }
+              - { name: logoMark, label: Logo mark, widget: image }
+              - { name: logoFull, label: Full logo, widget: image }
+          - name: location
+            label: Location
+            widget: object
+            fields:
+              - { name: city, label: City, widget: string }
+              - { name: region, label: State, widget: string }
+              - { name: country, label: Country code, widget: string }
+              - { name: addressLine, label: Address, widget: string }
+              - { name: postalCode, label: Pincode, widget: string }
+          - name: contact
+            label: Contact
+            widget: object
+            fields:
+              - { name: phone, label: Phone (as displayed), widget: string }
+              - { name: phoneAlt, label: Second phone, widget: string, required: false }
+              - { name: email, label: Email, widget: string }
+              - { name: whatsappNumber, label: WhatsApp number (digits only, with country code), widget: string, hint: 'e.g. 917799432131 — drives the prefilled booking messages' }
+              - { name: whatsappBusinessUrl, label: WhatsApp Business link, widget: string, required: false }
+          - name: social
+            label: Social
+            widget: object
+            fields:
+              - { name: instagram, label: Instagram URL, widget: string, required: false }
+              - { name: youtube, label: YouTube URL, widget: string, required: false }
+              - { name: googleBusiness, label: Google Business Profile URL, widget: string, required: false }
+          - name: proof
+            label: Numbers shown on the site
+            widget: object
+            fields:
+              - { name: yearsTrading, label: Years trading, widget: string }
+              - { name: setupsCompleted, label: Setups completed, widget: string }
+              - { name: foundedYear, label: Founded year, widget: string }
+          - name: booking
+            label: Booking
+            widget: object
+            fields:
+              - { name: mode, label: Mode, widget: hidden, default: whatsapp }
+              - { name: messageTemplate, label: WhatsApp message template, widget: text }
+              - { name: genericTemplate, label: General enquiry template, widget: text }
+              - name: slots
+                label: Setup slots
+                widget: list
+                field: { name: slot, label: Slot, widget: string }
+          - { name: filters, label: Filters, widget: object, collapsed: true, fields: [{ name: budgetMin, label: Minimum budget, widget: number, value_type: int }, { name: budgetMax, label: Maximum budget, widget: number, value_type: int }] }
+          - name: seo
+            label: Search settings
+            widget: object
+            collapsed: true
+            fields:
+              - { name: titleTemplate, label: Title template, widget: string }
+              - { name: defaultTitle, label: Default title, widget: string }
+              - { name: defaultDescription, label: Default description, widget: text }
+              - { name: siteUrl, label: Site URL, widget: string }
+              - { name: ogImage, label: Share image, widget: string }
+
+      - name: areas
+        label: Service areas
+        file: content/areas.json
+        fields:
+          - { name: note, label: Internal note, widget: string, required: false }
+          - name: areas
+            label: Areas
+            widget: list
+            fields:
+              - { name: name, label: Area name, widget: string }
+              - { name: slug, label: URL slug, widget: string }
+
+      - name: faqs
+        label: FAQs
+        file: content/faqs.json
+        fields:
+          - name: faqs
+            label: Questions
+            widget: list
+            fields:
+              - { name: question, label: Question, widget: string }
+              - { name: answer, label: Answer, widget: text }
+
+      - name: videos
+        label: Reels & videos
+        file: content/videos.json
+        fields:
+          - { name: note, label: Internal note, widget: string, required: false }
+          - { name: channelId, label: YouTube channel id, widget: string, required: false }
+          - name: videos
+            label: Featured videos
+            widget: list
+            fields:
+              - { name: id, label: YouTube video id, widget: string, hint: 'The 11 characters after watch?v= in the URL' }
+              - { name: label, label: Card label, widget: string }
+
+      - name: gallery
+        label: Gallery
+        file: content/gallery.json
+        fields:
+          - name: items
+            label: Photos
+            widget: list
+            fields:
+              - { name: image, label: Photo, widget: image }
+              - { name: alt, label: Photo description, widget: string }
+              - { name: category, label: Occasion slug, widget: string }
+
+      - name: addons
+        label: Add-ons
+        file: content/addons.json
+        fields:
+          - name: addons
+            label: Add-ons
+            widget: list
+            fields:
+              - { name: title, label: Name, widget: string }
+              - { name: slug, label: Slug, widget: string }
+              - { name: price, label: Price (₹), widget: number, value_type: int }
