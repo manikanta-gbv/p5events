@@ -1,15 +1,53 @@
 {
-  "note": "Replace with the areas P5 Events actually covers in Visakhapatnam.",
+  "note": "Replace with the areas P5 Events actually covers in Hyderabad.",
   "areas": [
-    { "slug": "mvp-colony", "name": "MVP Colony" },
-    { "slug": "seethammadhara", "name": "Seethammadhara" },
-    { "slug": "dwaraka-nagar", "name": "Dwaraka Nagar" },
-    { "slug": "madhurawada", "name": "Madhurawada" },
-    { "slug": "rushikonda", "name": "Rushikonda" },
-    { "slug": "beach-road", "name": "Beach Road" },
-    { "slug": "gajuwaka", "name": "Gajuwaka" },
-    { "slug": "akkayyapalem", "name": "Akkayyapalem" },
-    { "slug": "asilmetta", "name": "Asilmetta" },
-    { "slug": "pm-palem", "name": "PM Palem" }
+    {
+      "slug": "gachibowli",
+      "name": "Gachibowli"
+    },
+    {
+      "slug": "madhapur",
+      "name": "Madhapur"
+    },
+    {
+      "slug": "kondapur",
+      "name": "Kondapur"
+    },
+    {
+      "slug": "hitec-city",
+      "name": "HITEC City"
+    },
+    {
+      "slug": "kukatpally",
+      "name": "Kukatpally"
+    },
+    {
+      "slug": "miyapur",
+      "name": "Miyapur"
+    },
+    {
+      "slug": "banjara-hills",
+      "name": "Banjara Hills"
+    },
+    {
+      "slug": "jubilee-hills",
+      "name": "Jubilee Hills"
+    },
+    {
+      "slug": "secunderabad",
+      "name": "Secunderabad"
+    },
+    {
+      "slug": "manikonda",
+      "name": "Manikonda"
+    },
+    {
+      "slug": "narsingi",
+      "name": "Narsingi"
+    },
+    {
+      "slug": "uppal",
+      "name": "Uppal"
+    }
   ]
 }

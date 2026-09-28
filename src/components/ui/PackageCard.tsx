@@ -37,8 +37,8 @@ export function PackageCard({ data, showCta = false, showCategoryBadge = true }:
       </Link>
 
       <div className="flex flex-1 flex-col p-4">
-        <h3 className="text-base font-semibold leading-snug">
-          <Link href={`/packages/${data.slug}`} className="hover:text-accent">
+        <h3 className="-my-1 text-base font-semibold leading-snug">
+          <Link href={`/packages/${data.slug}`} className="inline-block py-1 hover:text-accent">
             {data.title}
           </Link>
         </h3>

@@ -39,7 +39,7 @@ function SectionHead({
       {linkLabel && linkHref ? (
         <Link
           href={linkHref}
-          className="inline-flex items-center gap-2 text-[14.5px] font-semibold text-accent hover:text-accentDark"
+          className="-my-1 inline-flex items-center gap-2 py-1 text-[14.5px] font-semibold text-accent hover:text-accentDark"
         >
           {linkLabel}
           <Icon name="arrowRight" size={16} />

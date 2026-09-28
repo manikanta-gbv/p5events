@@ -53,12 +53,12 @@ export default function ContactPage() {
                 <dt className="text-[13px] font-semibold uppercase tracking-[0.12em] text-muted">
                   Phone
                 </dt>
-                <dd className="mt-1 flex flex-col gap-1 text-[15px]">
-                  <a href={telLink(settings.contact.phone)} className="hover:text-accent">
+                <dd className="mt-1 flex flex-col text-[15px]">
+                  <a href={telLink(settings.contact.phone)} className="inline-block py-1.5 hover:text-accent">
                     {settings.contact.phone}
                   </a>
                   {settings.contact.phoneAlt ? (
-                    <a href={telLink(settings.contact.phoneAlt)} className="hover:text-accent">
+                    <a href={telLink(settings.contact.phoneAlt)} className="inline-block py-1.5 hover:text-accent">
                       {settings.contact.phoneAlt}
                     </a>
                   ) : null}
@@ -69,7 +69,7 @@ export default function ContactPage() {
                   Email
                 </dt>
                 <dd className="mt-1 text-[15px]">
-                  <a href={`mailto:${settings.contact.email}`} className="break-all hover:text-accent">
+                  <a href={`mailto:${settings.contact.email}`} className="inline-block break-all py-1.5 hover:text-accent">
                     {settings.contact.email}
                   </a>
                 </dd>

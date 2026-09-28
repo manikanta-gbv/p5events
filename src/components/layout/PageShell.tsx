@@ -22,12 +22,12 @@ export function PageShell({ children, crumbs }: Props) {
             aria-label="Breadcrumb"
             className="mx-auto max-w-shell px-5 pt-7 text-[13px] text-muted md:px-14"
           >
-            <ol className="flex flex-wrap items-center gap-2">
+            <ol className="-my-1 flex flex-wrap items-center gap-2">
               {crumbs.map((crumb, i) => (
                 <li key={crumb.href} className="flex items-center gap-2">
                   {i < crumbs.length - 1 ? (
                     <>
-                      <Link href={crumb.href} className="hover:text-accent">
+                      <Link href={crumb.href} className="inline-block py-1 hover:text-accent">
                         {crumb.name}
                       </Link>
                       <span aria-hidden="true">/</span>

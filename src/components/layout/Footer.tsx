@@ -32,12 +32,12 @@ export function Footer() {
           {nav.footer.map((column) => (
             <div key={column.heading}>
               <p className="mb-3 text-[13px] font-semibold text-onInk">{column.heading}</p>
-              <ul className="flex flex-col gap-2 text-[13.5px]">
+              <ul className="flex flex-col gap-0.5 text-[13.5px]">
                 {column.links.map((link) => (
                   <li key={link.href}>
                     <Link
                       href={link.href}
-                      className="text-onInkMuted transition-colors hover:text-gold"
+                      className="inline-block py-1.5 text-onInkMuted transition-colors hover:text-gold"
                     >
                       {link.label}
                     </Link>
@@ -49,9 +49,9 @@ export function Footer() {
 
           <div>
             <p className="mb-3 text-[13px] font-semibold text-onInk">Reach us</p>
-            <ul className="flex flex-col gap-2 text-[13.5px] text-onInkMuted">
+            <ul className="flex flex-col gap-0.5 text-[13.5px] text-onInkMuted">
               <li>
-                <a href={telLink(contact.phone)} className="transition-colors hover:text-gold">
+                <a href={telLink(contact.phone)} className="inline-block py-1.5 transition-colors hover:text-gold">
                   {contact.phone}
                 </a>
               </li>
@@ -59,7 +59,7 @@ export function Footer() {
                 <li>
                   <a
                     href={telLink(contact.phoneAlt)}
-                    className="transition-colors hover:text-gold"
+                    className="inline-block py-1.5 transition-colors hover:text-gold"
                   >
                     {contact.phoneAlt}
                   </a>
@@ -68,7 +68,7 @@ export function Footer() {
               <li>
                 <a
                   href={`mailto:${contact.email}`}
-                  className="break-all transition-colors hover:text-gold"
+                  className="inline-block break-all py-1.5 transition-colors hover:text-gold"
                 >
                   {contact.email}
                 </a>
@@ -84,9 +84,9 @@ export function Footer() {
           <span>
             © {year} {brand.name}. All photographs are of our own setups.
           </span>
-          <span className="flex gap-4">
+          <span className="flex gap-4 -my-1.5">
             {nav.legal.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-gold">
+              <Link key={link.href} href={link.href} className="inline-block py-1.5 hover:text-gold">
                 {link.label}
               </Link>
             ))}

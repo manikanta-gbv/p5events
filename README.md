@@ -1,7 +1,7 @@
 # P5 Events
 
 Static marketing and catalogue site for P5 Events, a party décor studio in
-Visakhapatnam. Booking runs over WhatsApp; there is no database and no server.
+Hyderabad. Booking runs over WhatsApp; there is no database and no server.
 
 ## Running it
 
@@ -27,7 +27,7 @@ npm run build   # static export to out/
 `content/` is the business. `src/` is the machinery. **Swap the `content/`
 folder and the same codebase becomes a different company's site.**
 
-No string like `Visakhapatnam`, a price, or a phone number appears anywhere
+No string like `Hyderabad`, a price, or a phone number appears anywhere
 under `src/`. A grep for any of them returning a hit is a defect.
 
 ## Deploying to Cloudflare Pages
