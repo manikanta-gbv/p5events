@@ -4,11 +4,12 @@
 
 backend:
   name: github
-  repo: OWNER/REPO # ← set to the GitHub repo once it exists
+  repo: manikanta-gbv/p5events
   branch: main
-  # Sveltia needs an OAuth callback. Deploy the authenticator to a Cloudflare
-  # Worker and put its URL here. See docs/CMS-SETUP.md.
-  base_url: https://REPLACE-WITH-YOUR-AUTH-WORKER.workers.dev
+  # OAuth endpoint. A static site has nowhere to receive GitHub's callback,
+  # so cms-auth/ in this repo is a tiny free Worker that does it.
+  # Deploy it, then put its URL here. See docs/CMS-SETUP.md.
+  base_url: https://p5events-cms-auth.REPLACE-SUBDOMAIN.workers.dev
 
 publish_mode: simple # commits straight to main; swap to editorial_workflow for review
 

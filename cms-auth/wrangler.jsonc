@@ -1,0 +1,18 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "p5events-cms-auth",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-26",
+
+  // Only these origins can receive an access token. Add the custom domain
+  // here too once there is one.
+  "vars": {
+    "ALLOWED_ORIGINS": "https://p5events.pages.dev,http://localhost:3000"
+  },
+
+  // GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET are secrets, not vars:
+  //   npx wrangler secret put GITHUB_CLIENT_ID   --config cms-auth/wrangler.jsonc
+  //   npx wrangler secret put GITHUB_CLIENT_SECRET --config cms-auth/wrangler.jsonc
+
+  "observability": { "enabled": true }
+}
