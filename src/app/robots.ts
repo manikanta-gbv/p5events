@@ -1,11 +1,10 @@
 import type { MetadataRoute } from 'next';
-import { getSettings } from '@/lib/content';
+import { getSiteUrl } from '@/lib/content';
 
 export const dynamic = 'force-static';
 
 export default function robots(): MetadataRoute.Robots {
-  const { seo } = getSettings();
-  const base = seo.siteUrl.replace(/\/$/, '');
+  const base = getSiteUrl();
 
   return {
     rules: [{ userAgent: '*', allow: '/' }],

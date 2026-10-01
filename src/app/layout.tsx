@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getSettings, getTheme } from '@/lib/content';
+import { getSettings, getSiteUrl, getTheme } from '@/lib/content';
 import { ThemeVars } from '@/components/ThemeVars';
 import { HeaderMount } from '@/components/layout/HeaderMount';
 import './globals.css';
@@ -8,7 +8,7 @@ export function generateMetadata(): Metadata {
   const { seo, brand, location } = getSettings();
 
   return {
-    metadataBase: new URL(seo.siteUrl),
+    metadataBase: new URL(getSiteUrl()),
     title: { default: seo.defaultTitle, template: seo.titleTemplate },
     description: seo.defaultDescription,
     openGraph: {

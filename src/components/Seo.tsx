@@ -1,4 +1,4 @@
-import { getAreas, getFaqs, getSettings } from '@/lib/content';
+import { getAreas, getFaqs, getSettings, getSiteUrl } from '@/lib/content';
 import type { Package } from '@/lib/schema';
 
 function JsonLd({ data }: { data: Record<string, unknown> }) {
@@ -12,6 +12,7 @@ function JsonLd({ data }: { data: Record<string, unknown> }) {
 
 export function LocalBusinessJsonLd() {
   const { brand, location, contact, seo, social } = getSettings();
+  const site = getSiteUrl();
   const areas = getAreas();
 
   return (
@@ -21,8 +22,8 @@ export function LocalBusinessJsonLd() {
         '@type': 'LocalBusiness',
         name: brand.name,
         description: seo.defaultDescription,
-        url: seo.siteUrl,
-        image: `${seo.siteUrl}${brand.logoFull}`,
+        url: site,
+        image: `${site}${brand.logoFull}`,
         address: {
           '@type': 'PostalAddress',
           streetAddress: location.addressLine,
@@ -41,7 +42,8 @@ export function LocalBusinessJsonLd() {
 }
 
 export function PackageJsonLd({ pkg }: { pkg: Package }) {
-  const { brand, seo, currency } = getSettings();
+  const { brand, currency } = getSettings();
+  const site = getSiteUrl();
 
   return (
     <JsonLd
@@ -50,14 +52,14 @@ export function PackageJsonLd({ pkg }: { pkg: Package }) {
         '@type': 'Product',
         name: pkg.title,
         description: pkg.summary,
-        image: `${seo.siteUrl}${pkg.images[0]}`,
+        image: `${site}${pkg.images[0]}`,
         brand: { '@type': 'Brand', name: brand.name },
         offers: {
           '@type': 'Offer',
           price: pkg.price,
           priceCurrency: currency.code,
           availability: 'https://schema.org/InStock',
-          url: `${seo.siteUrl}/packages/${pkg.slug}/`,
+          url: `${site}/packages/${pkg.slug}/`,
         },
       }}
     />
@@ -83,7 +85,7 @@ export function FaqJsonLd() {
 }
 
 export function BreadcrumbJsonLd({ trail }: { trail: { name: string; href: string }[] }) {
-  const { seo } = getSettings();
+  const site = getSiteUrl();
 
   return (
     <JsonLd
@@ -94,7 +96,7 @@ export function BreadcrumbJsonLd({ trail }: { trail: { name: string; href: strin
           '@type': 'ListItem',
           position: i + 1,
           name: crumb.name,
-          item: `${seo.siteUrl}${crumb.href}`,
+          item: `${site}${crumb.href}`,
         })),
       }}
     />

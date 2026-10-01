@@ -1,11 +1,10 @@
 import type { MetadataRoute } from 'next';
-import { getCategories, getPackages, getSettings } from '@/lib/content';
+import { getCategories, getPackages, getSiteUrl } from '@/lib/content';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const { seo } = getSettings();
-  const base = seo.siteUrl.replace(/\/$/, '');
+  const base = getSiteUrl();
   const now = new Date();
 
   const staticRoutes = ['', '/packages', '/occasions', '/gallery', '/about', '/contact'];

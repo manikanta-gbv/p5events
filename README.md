@@ -42,6 +42,16 @@ npm run deploy      # builds, then wrangler deploy
 auto-detects Next.js and installs the OpenNext SSR adapter, which a static
 export cannot satisfy. Node 22+ (wrangler requires it).
 
+## Moving to a real domain
+
+The site is on its free `workers.dev` subdomain. Every absolute URL —
+canonicals, sitemap, robots, JSON-LD — resolves from one value, so switching
+is three edits, not a search-and-replace. See `docs/CUSTOM-DOMAIN.md`.
+
+```
+SITE_URL (build env)  →  falls back to  →  seo.siteUrl (content/settings.json)
+```
+
 ## Content that still needs filling in
 
 Placeholders are written as `[like this]` so they are easy to grep:

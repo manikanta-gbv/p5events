@@ -134,6 +134,36 @@ export const getPackages = once((): Package[] => {
 export const getHomePage = once(() => parse(pageSchema, 'pages/home.json'));
 export const getGalleryPage = once(() => parse(pageSchema, 'pages/gallery.json'));
 
+/**
+ * The site's absolute URL — canonicals, the sitemap, robots and JSON-LD all
+ * build on it.
+ *
+ * Prefers SITE_URL from the build environment, falling back to
+ * seo.siteUrl in settings.json. Moving to a custom domain is then one
+ * environment variable in the host's build settings: no code change, no
+ * content edit, and preview deployments can point at themselves.
+ */
+export const getSiteUrl = once((): string => {
+  const raw = (process.env.SITE_URL || '').trim() || getSettings().seo.siteUrl;
+
+  let url: URL;
+  try {
+    url = new URL(raw);
+  } catch {
+    throw new Error(
+      `Site URL is not a valid absolute URL: "${raw}".\n` +
+        '  Set SITE_URL in the build environment, or fix seo.siteUrl in content/settings.json.',
+    );
+  }
+
+  if (url.protocol !== 'https:' && url.protocol !== 'http:') {
+    throw new Error(`Site URL must be http or https, got "${url.protocol}" in "${raw}".`);
+  }
+
+  // Origin only — every caller appends its own path.
+  return url.origin;
+});
+
 export function getPackage(slug: string): Package | undefined {
   return getPackages().find((p) => p.slug === slug);
 }
