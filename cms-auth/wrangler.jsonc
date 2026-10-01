@@ -7,7 +7,7 @@
   // Only these origins can receive an access token. Add the custom domain
   // here too once there is one.
   "vars": {
-    "ALLOWED_ORIGINS": "https://p5events.pages.dev,http://localhost:3000"
+    "ALLOWED_ORIGINS": "https://p5events.gbvmanikanta13.workers.dev,http://localhost:3000"
   },
 
   // GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET are secrets, not vars:

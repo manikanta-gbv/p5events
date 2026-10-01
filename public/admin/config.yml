@@ -9,7 +9,7 @@ backend:
   # OAuth endpoint. A static site has nowhere to receive GitHub's callback,
   # so cms-auth/ in this repo is a tiny free Worker that does it.
   # Deploy it, then put its URL here. See docs/CMS-SETUP.md.
-  base_url: https://p5events-cms-auth.REPLACE-SUBDOMAIN.workers.dev
+  base_url: https://p5events-cms-auth.gbvmanikanta13.workers.dev
 
 publish_mode: simple # commits straight to main; swap to editorial_workflow for review
 

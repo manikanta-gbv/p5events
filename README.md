@@ -20,7 +20,7 @@ npm run build   # static export to out/
 | Content | JSON files in `content/`, validated by Zod at build |
 | Admin | Sveltia CMS at `/admin`, commits to GitHub |
 | Images | `public/images/`, WebP, variants built by `scripts/` |
-| Hosting | Cloudflare Pages (free, commercial use permitted) |
+| Hosting | Cloudflare Workers static assets (free, commercial use permitted) |
 
 ## The rule
 
@@ -30,11 +30,17 @@ folder and the same codebase becomes a different company's site.**
 No string like `Hyderabad`, a price, or a phone number appears anywhere
 under `src/`. A grep for any of them returning a hit is a defect.
 
-## Deploying to Cloudflare Pages
+## Deploying
 
-- Build command: `npm run build`
-- Output directory: `out`
-- Node version: 20
+Connected to Cloudflare via Git, or straight from your machine:
+
+```bash
+npm run deploy      # builds, then wrangler deploy
+```
+
+`wrangler.jsonc` declares `out/` as static assets. Without it, wrangler
+auto-detects Next.js and installs the OpenNext SSR adapter, which a static
+export cannot satisfy. Node 22+ (wrangler requires it).
 
 ## Content that still needs filling in
 
