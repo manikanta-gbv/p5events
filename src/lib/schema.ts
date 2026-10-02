@@ -142,7 +142,7 @@ export const packageSchema = z
     title: z.string().min(1),
     category: slug,
     price: z.number().int().positive(),
-    strikePrice: z.number().int().positive().optional(),
+    strikePrice: z.number().int().positive().nullish(),
     summary: z.string().min(1),
     images: z.array(imagePath).min(1),
     imageAlt: z.string().min(1),
@@ -153,7 +153,7 @@ export const packageSchema = z
     featured: z.boolean().default(false),
     published: z.boolean().default(true),
   })
-  .refine((p) => p.strikePrice === undefined || p.strikePrice > p.price, {
+  .refine((p) => p.strikePrice == null || p.strikePrice > p.price, {
     message: 'strikePrice must be greater than price',
     path: ['strikePrice'],
   });
