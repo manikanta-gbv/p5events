@@ -12,7 +12,11 @@
     "region": "Telangana",
     "country": "IN",
     "addressLine": "Shop no, 3-4-793, opp Tulja Bhavan, near tourist hotel, beside gokuldham, Barkatpura.",
-    "postalCode": "500027"
+    "postalCode": "500027",
+    "geo": {
+      "latitude": "",
+      "longitude": ""
+    }
   },
   "contact": {
     "phone": "+91 77994 32131",
@@ -107,5 +111,19 @@
     "code": "INR",
     "locale": "en-IN",
     "symbol": "₹"
+  },
+  "openingHours": {
+    "note": "Days the team takes bookings. Leave blank to omit from search data.",
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "",
+    "closes": ""
   }
 }

@@ -62,7 +62,19 @@ export const settingsSchema = z.object({
     country: z.string().length(2),
     addressLine: z.string(),
     postalCode: z.string(),
+    // Emitted in structured data only when both are filled in.
+    geo: z
+      .object({ latitude: z.string(), longitude: z.string() })
+      .optional(),
   }),
+  openingHours: z
+    .object({
+      note: z.string().optional(),
+      days: z.array(z.string()),
+      opens: z.string(),
+      closes: z.string(),
+    })
+    .optional(),
   contact: z.object({
     phone: z.string().min(1),
     phoneAlt: z.string().optional(),
