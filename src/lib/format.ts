@@ -13,12 +13,12 @@ export function formatPrice(amount: number): string {
   }).format(amount);
 }
 
-export function discountPercent(price: number, strikePrice?: number | null {
+export function discountPercent(price: number, strikePrice?: number | null): number | null {
   if (!strikePrice || strikePrice <= price) return null;
   return Math.round(((strikePrice - price) / strikePrice) * 100);
 }
 
-export function savingsAmount(price: number, strikePrice?: number | null {
+export function savingsAmount(price: number, strikePrice?: number | null): number | null {
   if (!strikePrice || strikePrice <= price) return null;
   return strikePrice - price;
 }
