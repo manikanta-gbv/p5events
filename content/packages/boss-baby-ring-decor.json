@@ -1,0 +1,31 @@
+{
+  "title": "Baby boss ring decor",
+  "slug": "boss-baby-ring-decor",
+  "category": "ring-decor",
+  "price": 6499,
+  "strikePrice": 7999,
+  "summary": "Baby boss ring decor with themed backdrop , cake table, 1 neon light",
+  "images": [
+    "/images/ boss-baby-ring-decor.webp"
+  ],
+  "imageAlt": "Baby boss ring decor with themed backdrop , cake table, 1 neon light and 2 baloon pillars.",
+  "inclusions": [
+    "6×6 Boss Baby Themed Ring Backdrop with Premium Flex Print",
+    "Black, Golden & Chrome Balloons",
+    "2 Boss Baby Themed Cutouts",
+    "2 Flex Design Round Cake Tables",
+    "1 Neon Number",
+    "2 Balloon Pillars"
+  ],
+  "venues": [
+    "home",
+    "restaurant",
+    "terrace"
+  ],
+  "palette": [
+    "black-gold"
+  ],
+  "setupHours": 1.5,
+  "featured": false,
+  "published": true
+}
