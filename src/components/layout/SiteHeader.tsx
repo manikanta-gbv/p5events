@@ -82,7 +82,13 @@ export function SiteHeader({
             <Icon name="whatsapp" size={16} />
             {ctaLabel}
           </a>
-          <MobileMenu items={items} whatsappHref={whatsappHref} />
+          <MobileMenu
+            items={items}
+            whatsappHref={whatsappHref}
+            brandName={brandName}
+            wordmark={wordmark}
+            logoMark={logoMark}
+          />
         </div>
       </div>
     </header>
