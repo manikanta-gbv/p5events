@@ -33,6 +33,12 @@ collections:
     label: Packages
     label_singular: Package
     folder: content/packages
+    # Folder collections default to Markdown with frontmatter. These are
+    # plain JSON, so without this the CMS looks for *.md, finds none, and
+    # reports 0 packages. The "Site content" entries below are unaffected
+    # because each names its file path including the .json extension.
+    extension: json
+    format: json
     create: true
     delete: true
     identifier_field: title
