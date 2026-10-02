@@ -1,0 +1,29 @@
+{
+  "title": "Butterfly Theme Decor",
+  "slug": "butterfly-theme-ring",
+  "category": "ring-decor",
+  "price": 4499,
+  "strikePrice": 5799,
+  "summary": "Butterfly Theme Decor with balloons , neon light and cake stand.",
+  "images": [
+    "/images/butterfly-theme-ring.webp"
+  ],
+  "imageAlt": "Butterfly Theme Decor with balloons , Happy Birthday neon light and cake table & stand.",
+  "inclusions": [
+    "6×6 Ring Backdrop with Balloons in Silver Chrome, Sky Blue, Pink & Purple",
+    "“Happy Birthday” Neon Light",
+    "Cake Table",
+    "1 Premium Cake Stand",
+    "2 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 1.5,
+  "featured": false,
+  "published": true
+}
