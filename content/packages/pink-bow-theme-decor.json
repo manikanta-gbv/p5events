@@ -1,0 +1,32 @@
+{
+  "title": "Pink bow theme decor",
+  "slug": "pink-bow-theme-decor",
+  "category": "ring-decor",
+  "price": 6999,
+  "strikePrice": 7699,
+  "summary": "Pink bow theme with baloons, flowers and enhanced lights.",
+  "images": [
+    "/images/pink-bow-theme-decor.webp"
+  ],
+  "imageAlt": "Pink bow theme with baloons , flowers , age light and enjanced lights.",
+  "inclusions": [
+    "4×7 Frame with Personalized “Happy Birthday” Flex Print",
+    "Balloon Décor as Shown (Pink, Golden & Baby Pink)",
+    "1 Paper Cake Table",
+    "LED Age Number Display",
+    "Baby Letter Boxes",
+    "Artificial Rose Decorations",
+    "Cake Stand",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "neutral"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
