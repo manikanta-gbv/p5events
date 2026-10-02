@@ -1,0 +1,31 @@
+{
+  "title": "Baby Shower Theme Decor",
+  "slug": "baby-shower",
+  "category": "baby-shower",
+  "price": 9999,
+  "strikePrice": 11899,
+  "summary": "Baby Shower Theme with balloons, 2cutouts, paper butterfly.",
+  "images": [
+    "/images/baby-shower.webp"
+  ],
+  "imageAlt": "Baby Shower Theme with balloons, 2 cutouts on balloon pillars, boxes, welcome board and lights.",
+  "inclusions": [
+    "8×8 Flex Backdrop with Balloons in Pink, Purple, Pastel Purple & Golden Chrome",
+    "Personalized Flex",
+    "2 Cutouts on Balloon Pillars",
+    "Baby Boxes",
+    "Paper Butterflies",
+    "2×3 Feet Welcome Board",
+    "2 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2.5,
+  "featured": false,
+  "published": true
+}
