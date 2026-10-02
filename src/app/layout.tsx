@@ -1,8 +1,13 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { getSettings, getSiteUrl, getTheme } from '@/lib/content';
 import { ThemeVars } from '@/components/ThemeVars';
 import { HeaderMount } from '@/components/layout/HeaderMount';
 import './globals.css';
+
+/** Colours the browser chrome on Android and the iOS status bar. */
+export function generateViewport(): Viewport {
+  return { themeColor: getTheme().colors.ink };
+}
 
 export function generateMetadata(): Metadata {
   const { seo, brand, location } = getSettings();
