@@ -1,0 +1,31 @@
+{
+  "title": "50th Birthday Decor",
+  "slug": "50birthday-decor",
+  "category": "birthday",
+  "price": 6999,
+  "strikePrice": 8499,
+  "summary": "50th Birthday Decor with balloons , neon light, LED age number , cake stand and lights.",
+  "images": [
+    "/images/50birthday-decor.webp"
+  ],
+  "imageAlt": "50th Birthday Decor with balloons , neon light, LED age number and cake stand.",
+  "inclusions": [
+    "4×7 Frame with Personalized “Happy Birthday” Flex Print",
+    "Balloon Décor as Shown (Pink Chrome, Pastel Pink & Yellow)",
+    "1 Cake Table",
+    "LED Age Number Display",
+    "Cake Stand",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "restaurant",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
