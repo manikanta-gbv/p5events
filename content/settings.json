@@ -27,9 +27,9 @@
     "googleBusiness": "https://p5-events.business.site/"
   },
   "proof": {
-    "yearsTrading": "[N]",
-    "setupsCompleted": "[N]+",
-    "foundedYear": "[year]"
+    "yearsTrading": "11 years",
+    "setupsCompleted": "2000+",
+    "foundedYear": "2015"
   },
   "booking": {
     "mode": "whatsapp",
@@ -43,63 +43,58 @@
     ]
   },
   "filters": {
-    "venues": [
-      {
-        "slug": "home",
-        "label": "Home or apartment"
-      },
-      {
-        "slug": "banquet-hall",
-        "label": "Banquet hall"
-      },
-      {
-        "slug": "terrace",
-        "label": "Terrace or garden"
-      },
-      {
-        "slug": "restaurant",
-        "label": "Restaurant"
-      }
-    ],
+    "budgetMin": 1999,
+    "budgetMax": 25000,
     "palettes": [
       {
-        "slug": "pastel",
         "label": "Pastel",
+        "slug": "pastel",
         "swatch": "#F2C9D4"
       },
       {
-        "slug": "rose-gold",
         "label": "Rose gold",
+        "slug": "rose-gold",
         "swatch": "#D9A38B"
       },
       {
-        "slug": "black-gold",
         "label": "Black and gold",
+        "slug": "black-gold",
         "swatch": "#2B2B2B"
       },
       {
-        "slug": "blue",
         "label": "Blue",
+        "slug": "blue",
         "swatch": "#8FB3DB"
       },
       {
-        "slug": "neutral",
         "label": "Neutral",
+        "slug": "neutral",
         "swatch": "#D9CDBC"
       },
       {
-        "slug": "bright",
         "label": "Bright",
+        "slug": "bright",
         "swatch": "#E9564B"
       }
     ],
-    "budgetMin": 1999,
-    "budgetMax": 25000
-  },
-  "currency": {
-    "code": "INR",
-    "symbol": "₹",
-    "locale": "en-IN"
+    "venues": [
+      {
+        "label": "Home or apartment",
+        "slug": "home"
+      },
+      {
+        "label": "Banquet hall",
+        "slug": "banquet-hall"
+      },
+      {
+        "label": "Terrace or garden",
+        "slug": "terrace"
+      },
+      {
+        "label": "Restaurant",
+        "slug": "restaurant"
+      }
+    ]
   },
   "seo": {
     "titleTemplate": "%s | P5 Events",
@@ -107,5 +102,10 @@
     "defaultDescription": "Balloon décor, themed backdrops and complete party setups for homes, halls and terraces across Hyderabad. Fixed prices, on-time setup.",
     "siteUrl": "https://p5events.gbvmanikanta13.workers.dev",
     "ogImage": "/images/brand/og-default.jpg"
+  },
+  "currency": {
+    "code": "INR",
+    "locale": "en-IN",
+    "symbol": "₹"
   }
 }
