@@ -1,0 +1,31 @@
+{
+  "title": "Spider-Man Birthday Decor",
+  "slug": "spiderman-birthday-decor",
+  "category": "birthday",
+  "price": 7999,
+  "strikePrice": 9499,
+  "summary": "Spider-Man Birthday Decor with balloons, LED age, cake stand and focus light.",
+  "images": [
+    "/images/ spiderman- birthday-decor.webp"
+  ],
+  "imageAlt": "Spider-Man Birthday Decor with balloons, LED age, cake stand and focus light.",
+  "inclusions": [
+    "2 × 4×8 Frames with Personalized “Happy Birthday” Flex Print",
+    "Balloon Décor as Shown (Blue Chrome, Pastel Blue & Red)",
+    "1 Cake Table",
+    "LED Age Number Display",
+    "Cake Stand",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "terrace",
+    "restaurant"
+  ],
+  "palette": [
+    "bright"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
