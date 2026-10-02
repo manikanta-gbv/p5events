@@ -49,8 +49,8 @@ export function SiteHeader({
             priority
             className="h-10 w-10 object-contain md:h-[46px] md:w-[46px]"
           />
-          <span className="hidden h-[26px] w-px bg-gold/40 sm:block" />
-          <span className="hidden text-[12.5px] uppercase tracking-[0.3em] text-gold sm:block">
+          <span className="h-7 w-px bg-gold/40" />
+          <span className="whitespace-nowrap text-[10px] uppercase tracking-[0.14em] text-gold sm:text-[12.5px] sm:tracking-[0.22em]">
             {wordmark}
           </span>
         </Link>
