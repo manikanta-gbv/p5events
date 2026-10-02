@@ -1,0 +1,29 @@
+{
+  "title": "Bride To Be Decor",
+  "slug": "bride-decor",
+  "category": "bride-to-be",
+  "price": 14999,
+  "strikePrice": 17499,
+  "summary": "Bride to Be Decor with artificial flowers, welcome board.",
+  "images": [
+    "/images/bride-decor.webp"
+  ],
+  "imageAlt": "Bride to Be Decor with artificial flowers, natural leaves and some flowers and welcome board.",
+  "inclusions": [
+    "2 × 4×8 Frames with Personalized Theme Flex Print",
+    "Artificial Flowers Used for Décor as Shown in the Image",
+    "Natural Green Leaves and Additional Flowers",
+    "2×3 Feet Welcome Board",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
