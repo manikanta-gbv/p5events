@@ -1,0 +1,31 @@
+{
+  "title": "Jungle theme decor",
+  "slug": "jungle-theme-decor",
+  "category": "ring-decor",
+  "price": 7999,
+  "strikePrice": 8799,
+  "summary": "Jungle theme with animals and baloons.",
+  "images": [
+    "/images/jungle-theme-decor.webp"
+  ],
+  "imageAlt": "Jungle theme with animals sides , baloons , cake table and LED age number.",
+  "inclusions": [
+    "4×7 Frame with Personalized “Happy Birthday” Flex Print",
+    "Balloon Décor as Shown (Green, Golden, White & Yellow)",
+    "1 Paper Cane Table",
+    "LED Age Number Display",
+    "2 Jungle Theme Cutouts",
+    "Cake Stand",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "bright"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
