@@ -1,0 +1,30 @@
+{
+  "title": "Simple & Elegant Theme Decor",
+  "slug": "simple-and-elegant-theme",
+  "category": "ring-decor",
+  "price": 4499,
+  "strikePrice": 5899,
+  "summary": "Simple & Elegant Theme ring decor with balloons and neon light , cake stand and table",
+  "images": [
+    "/images/simple-and-Elegant-theme.webp"
+  ],
+  "imageAlt": "Simple & Elegant Theme ring decor with balloons , Happy Birthday neon light , cake stand and table and 2 LED lights",
+  "inclusions": [
+    "6×6 Ring Backdrop with Balloons in Golden Chrome, White & Maroon",
+    "“Happy Birthday” Neon Light",
+    "Cake Table",
+    "1 Premium Cake Stand",
+    "2 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "terrace",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 1.5,
+  "featured": false,
+  "published": true
+}
