@@ -1,0 +1,32 @@
+{
+  "title": "Elegant balloon decor",
+  "slug": "elegant-balloon-decor",
+  "category": "birthday",
+  "price": 8999,
+  "strikePrice": null,
+  "summary": "An elegent baloon decor for outdoor and party setup.",
+  "images": [
+    "/images/WhatsApp Image 2026-10-01 at 04.07.34.webp"
+  ],
+  "imageAlt": "Birthday event setup.",
+  "inclusions": [
+    "8/8 square frame backdrop",
+    "Happy Birthday Neon Light",
+    "Balloon Decoration as Per Image",
+    "Balloon Colours: Chrome Gold, peach,skin colours",
+    "Artificial Leafs and Flowers",
+    "1 Metal Cake Table",
+    "2 Focusing Lights"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace",
+    "home"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
