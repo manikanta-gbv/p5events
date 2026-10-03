@@ -1,6 +1,5 @@
 {
-  "title": "Baby Shower Theme Decor",
-  "slug": "baby-shower",
+  "title": "Baby Shower Decor",
   "category": "baby-shower",
   "price": 9999,
   "strikePrice": 11899,
@@ -27,5 +26,6 @@
   ],
   "setupHours": 2.5,
   "featured": false,
-  "published": true
+  "published": true,
+  "slug": "baby-shower"
 }
