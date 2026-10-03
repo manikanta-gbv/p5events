@@ -30,6 +30,25 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Checked before the build, not after: wrangler's own message for a
+      # missing token talks about interactive logins and does not mention
+      # GitHub secrets at all, which sends you looking in the wrong place.
+      - name: Check deploy credentials
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error title=Missing secret::CLOUDFLARE_API_TOKEN is not set on this repository."
+            echo ""
+            echo "Add it as a REPOSITORY secret (not an environment secret) at:"
+            echo "  Settings -> Secrets and variables -> Actions -> New repository secret"
+            echo "  https://github.com/${{ github.repository }}/settings/secrets/actions/new"
+            echo ""
+            echo "Name it exactly: CLOUDFLARE_API_TOKEN"
+            exit 1
+          fi
+          echo "CLOUDFLARE_API_TOKEN present (${#TOKEN} characters)"
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: .node-version
