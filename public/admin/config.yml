@@ -11,6 +11,13 @@ backend:
   # Deploy it, then put its URL here. See docs/CMS-SETUP.md.
   base_url: https://p5events-cms-auth.gbvmanikanta13.workers.dev
 
+# Filenames the CMS generates: lowercase, hyphens, ascii only. Without this,
+# a title pasted with an invisible character carries it into the filename.
+slug:
+  encoding: ascii
+  clean_accents: true
+  sanitize_replacement: '-'
+
 publish_mode: simple # commits straight to main; swap to editorial_workflow for review
 
 media_folder: public/images
@@ -42,12 +49,13 @@ collections:
     create: true
     delete: true
     identifier_field: title
-    slug: '{{fields.slug}}'
+    # Filename comes from the title, slugified by the CMS. The site reads the
+    # URL from the filename, so there is no slug field to get wrong.
+    slug: '{{title}}'
     summary: '{{title}} — ₹{{price}}'
     sortable_fields: [title, price, category]
     fields:
       - { name: title, label: Package name, widget: string }
-      - { name: slug, label: URL slug, widget: string, hint: 'lowercase-with-hyphens' }
       - name: category
         label: Occasion
         widget: relation

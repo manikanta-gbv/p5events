@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run images && next build",
+    "build": "npm run check && npm run images && next build",
     "start": "next start",
     "lint": "next lint",
     "images": "node scripts/generate-image-variants.mjs",
@@ -16,7 +16,8 @@
     "cms-auth:deploy": "wrangler deploy --config cms-auth/wrangler.jsonc",
     "cms-auth:secrets": "wrangler secret put GITHUB_CLIENT_ID --config cms-auth/wrangler.jsonc && wrangler secret put GITHUB_CLIENT_SECRET --config cms-auth/wrangler.jsonc",
     "icons": "node scripts/generate-icons.mjs",
-    "og": "node scripts/generate-og-image.mjs"
+    "og": "node scripts/generate-og-image.mjs",
+    "check": "node scripts/check-content.mjs"
   },
   "dependencies": {
     "next": "^16.3.6",

@@ -150,7 +150,9 @@ export const categoriesSchema = z.object({ categories: z.array(categorySchema).m
 
 export const packageSchema = z
   .object({
-    slug,
+    // Optional: the loader derives the slug from the filename, which is what
+    // actually drives the URL. Kept so existing content still parses.
+    slug: slug.optional(),
     title: z.string().min(1),
     category: slug,
     price: z.number().int().positive(),
@@ -221,7 +223,12 @@ export type Theme = z.infer<typeof themeSchema>;
 export type Settings = z.infer<typeof settingsSchema>;
 export type Navigation = z.infer<typeof navigationSchema>;
 export type Category = z.infer<typeof categorySchema>;
-export type Package = z.infer<typeof packageSchema>;
+/**
+ * The shape after loading, not after parsing: `slug` is optional in the file
+ * because the loader derives it from the filename, and is always present by
+ * the time anything reads a package.
+ */
+export type Package = z.infer<typeof packageSchema> & { slug: string };
 export type Addon = z.infer<typeof addonsSchema>['addons'][number];
 export type Area = z.infer<typeof areasSchema>['areas'][number];
 export type Faq = z.infer<typeof faqsSchema>['faqs'][number];

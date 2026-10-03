@@ -19,10 +19,31 @@ import {
 
 const CONTENT_DIR = path.join(process.cwd(), 'content');
 
+/**
+ * Zero-width and invisible formatting characters. These ride along invisibly
+ * when text is pasted from WhatsApp, Word or a web page, and they are never
+ * intentional in content. Left in place they break slugs and image paths
+ * while the value still looks perfect on screen — a word joiner in a slug
+ * once failed a deploy with "must be a lowercase kebab-case slug" against a
+ * slug that read exactly right.
+ */
+const INVISIBLE = /[\u200B-\u200F\u2060\uFEFF\u00AD]/g;
+
+function deepClean(value: unknown): unknown {
+  if (typeof value === 'string') return value.replace(INVISIBLE, '');
+  if (Array.isArray(value)) return value.map(deepClean);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value as Record<string, unknown>).map(([k, v]) => [k, deepClean(v)]),
+    );
+  }
+  return value;
+}
+
 function readJson(relativePath: string): unknown {
   const full = path.join(CONTENT_DIR, relativePath);
   try {
-    return JSON.parse(fs.readFileSync(full, 'utf8'));
+    return deepClean(JSON.parse(fs.readFileSync(full, 'utf8')));
   } catch (error) {
     throw new Error(
       `Could not read content/${relativePath}: ${(error as Error).message}`,
@@ -89,7 +110,10 @@ export const getPackages = once((): Package[] => {
         .join('\n');
       throw new Error(`content/packages/${file} is not valid:\n${issues}`);
     }
-    return parsed.data;
+    // The filename is authoritative. A slug field edited in the CMS used to
+    // diverge from it silently, producing a URL nobody expected — or a build
+    // failure days later.
+    return { ...parsed.data, slug: path.basename(file, '.json') };
   });
 
   // Referential integrity: a package pointing at a category that does not
