@@ -2,52 +2,52 @@
   "note": "Replace with the areas P5 Events actually covers in Hyderabad.",
   "areas": [
     {
-      "slug": "gachibowli",
-      "name": "Gachibowli"
+      "name": "Gachibowli",
+      "slug": "gachibowli"
     },
     {
-      "slug": "madhapur",
-      "name": "Madhapur"
+      "name": "Madhapur",
+      "slug": "madhapur"
     },
     {
-      "slug": "kondapur",
-      "name": "Kondapur"
+      "name": "Kondapur",
+      "slug": "kondapur"
     },
     {
-      "slug": "hitec-city",
-      "name": "HITEC City"
+      "name": "Hitech City",
+      "slug": "hitech-city"
     },
     {
-      "slug": "kukatpally",
-      "name": "Kukatpally"
+      "name": "Kukatpally",
+      "slug": "kukatpally"
     },
     {
-      "slug": "miyapur",
-      "name": "Miyapur"
+      "name": "Miyapur",
+      "slug": "miyapur"
     },
     {
-      "slug": "banjara-hills",
-      "name": "Banjara Hills"
+      "name": "Banjara Hills",
+      "slug": "banjara-hills"
     },
     {
-      "slug": "jubilee-hills",
-      "name": "Jubilee Hills"
+      "name": "Jubilee Hills",
+      "slug": "jubilee-hills"
     },
     {
-      "slug": "secunderabad",
-      "name": "Secunderabad"
+      "name": "Secunderabad",
+      "slug": "secunderabad"
     },
     {
-      "slug": "manikonda",
-      "name": "Manikonda"
+      "name": "Manikonda",
+      "slug": "manikonda"
     },
     {
-      "slug": "narsingi",
-      "name": "Narsingi"
+      "name": "Narsingi",
+      "slug": "narsingi"
     },
     {
-      "slug": "uppal",
-      "name": "Uppal"
+      "name": "Uppal",
+      "slug": "uppal"
     }
   ]
 }
