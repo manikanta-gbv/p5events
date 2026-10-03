@@ -32,7 +32,11 @@ under `src/`. A grep for any of them returning a hit is a defect.
 
 ## Deploying
 
-Connected to Cloudflare via Git, or straight from your machine:
+GitHub Actions builds and deploys on every push to `main`, including CMS
+saves — not Cloudflare's own build system, which has failed to start on us
+more than once. See `docs/DEPLOYMENT.md`.
+
+Straight from your machine:
 
 ```bash
 npm run deploy      # builds, then wrangler deploy

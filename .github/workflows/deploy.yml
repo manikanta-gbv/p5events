@@ -1,0 +1,64 @@
+name: Deploy
+
+# Builds and deploys from GitHub Actions rather than Cloudflare's own build
+# system. Cloudflare Workers Builds has failed to start several times — on
+# 2026-10-03 it timed out in "Initializing" for 14 minutes without ever
+# cloning the repo, during an open Cloudflare incident titled "Issues with
+# Workers Build failing to start".
+#
+# Nothing about that was in our control. Building here removes the dependency:
+# a CMS save still commits to main and still deploys automatically, but on
+# infrastructure we can see, re-run and pin.
+
+on:
+  push:
+    branches: [main]
+  # Lets you redeploy the current main without an empty commit.
+  workflow_dispatch:
+
+# A CMS save can land while a deploy is running. Queue rather than race, and
+# never cancel a half-finished deploy.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .node-version
+          cache: npm
+
+      - run: npm ci
+
+      # Validates every content file, regenerates image variants, then builds
+      # the static export. Fails loudly on a bad content edit, which leaves
+      # the live site untouched.
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
+
+      - name: Type check
+        run: npm run typecheck
+
+      - name: Verify the export looks right
+        run: |
+          test -f out/index.html || { echo "out/index.html missing"; exit 1; }
+          test -f out/sitemap.xml || { echo "out/sitemap.xml missing"; exit 1; }
+          test -f out/admin/index.html || { echo "admin missing"; exit 1; }
+          pages=$(find out -name index.html | wc -l)
+          echo "built $pages pages"
+          [ "$pages" -ge 10 ] || { echo "only $pages pages — refusing to deploy"; exit 1; }
+
+      - name: Deploy to Cloudflare
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

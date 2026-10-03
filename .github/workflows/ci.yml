@@ -1,23 +1,29 @@
 name: CI
 
+# Pull requests only. Pushes to main are handled by deploy.yml, which runs
+# the same checks before deploying — no point building main twice.
 on:
-  push:
-    branches: [main]
   pull_request:
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version-file: .node-version
           cache: npm
+
       - run: npm ci
-      # Fails if any image in public/images exceeds the size gate, and if any
-      # content file fails its Zod schema.
+
+      # Validates content against the Zod schemas, fails on an image path
+      # that resolves to nothing, and fails if any image exceeds the size gate.
       - run: npm run build
         env:
           CI: true
+
       - run: npm run typecheck
