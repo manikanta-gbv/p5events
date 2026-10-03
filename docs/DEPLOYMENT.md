@@ -32,11 +32,39 @@ Go straight to <https://dash.cloudflare.com/profile/api-tokens> — it sits
 under your user profile, not under the p5events project, which is the part
 most people hunt for.
 
-**Create Token** → find **Edit Cloudflare Workers** in the template list →
-**Use template**. Leave the defaults; under *Account Resources* pick this
-account. **Continue to summary** → **Create Token**.
+Two ways. The custom token is fewer clicks once you know where things are,
+and grants far less.
 
-Copy it immediately. Cloudflare shows it once and never again.
+**Custom token (recommended)**
+
+*Create Token* → **Create Custom Token** → *Get started*.
+
+| Setting | Value |
+| --- | --- |
+| Token name | `p5events deploy` |
+| Permissions | **Account** · **Workers Scripts** · **Edit** |
+| Account Resources | **Include** · *Gbvmanikanta13@gmail.com's Account* |
+| Zone Resources | leave as is |
+
+One permission is enough. This Worker serves static assets — no KV, no R2,
+no Containers, no Pages — so everything else the template asks for is scope
+you would be handing out for nothing.
+
+**Or the Edit Cloudflare Workers template**
+
+It works, but you must narrow *Account Resources* to your account **only**
+before continuing. Left at the default it tries to grant the same
+permissions on every account you can see, and fails:
+
+> Failed common permission check against resources.
+> (Permission group: "Workers KV Storage Write")
+
+That is what the error on the summary screen means: the template asked for
+Workers KV Storage Write on an account you belong to but do not own, so
+Cloudflare rejected the token as a whole. Narrowing the account resources
+clears it.
+
+Copy the token immediately. Cloudflare shows it once and never again.
 
 ### 2. Add one GitHub secret
 
