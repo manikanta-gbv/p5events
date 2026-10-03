@@ -1,6 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "p5events",
+  // Not a secret — it is an account identifier, visible in every dashboard
+  // URL, and grants nothing on its own. The API token is the credential.
+  // Keeping it here means CI needs one secret instead of two.
+  "account_id": "f8c97edc15df9ff338c60ead975ba657",
   "compatibility_date": "2026-09-26",
 
   // This site is a static export (next.config.mjs sets output: 'export'), so

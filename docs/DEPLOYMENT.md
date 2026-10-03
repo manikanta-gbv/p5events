@@ -28,24 +28,33 @@ from the browser without an empty commit.
 
 ### 1. Create a Cloudflare API token
 
-Cloudflare dashboard → My Profile → API Tokens → **Create Token** → use the
-**Edit Cloudflare Workers** template.
+Go straight to <https://dash.cloudflare.com/profile/api-tokens> — it sits
+under your user profile, not under the p5events project, which is the part
+most people hunt for.
 
-Scope it to this account only. Copy the token — it is shown once.
+**Create Token** → find **Edit Cloudflare Workers** in the template list →
+**Use template**. Leave the defaults; under *Account Resources* pick this
+account. **Continue to summary** → **Create Token**.
 
-### 2. Add two GitHub secrets
+Copy it immediately. Cloudflare shows it once and never again.
 
-Repo → Settings → Secrets and variables → Actions → **New repository secret**:
+### 2. Add one GitHub secret
 
-| Secret | Value |
+<https://github.com/manikanta-gbv/p5events/settings/secrets/actions/new>
+
+| Name | Value |
 | --- | --- |
 | `CLOUDFLARE_API_TOKEN` | the token from step 1 |
-| `CLOUDFLARE_ACCOUNT_ID` | the id in the dashboard URL, after `dash.cloudflare.com/` |
+
+Nothing else. The account id is not a secret — it is an identifier that
+appears in every dashboard URL and grants nothing on its own — so it lives
+in `wrangler.jsonc` instead.
 
 ### 3. Turn off the Cloudflare Git build
 
-Cloudflare dashboard → Workers & Pages → **p5events** → Settings → Builds →
-disconnect the Git repository.
+<https://dash.cloudflare.com/f8c97edc15df9ff338c60ead975ba657/workers/services/view/p5events/production/settings>
+
+Find the **Build** section and disconnect the Git repository.
 
 Skip this and both systems deploy on every push: two builds, one of them on
 the infrastructure we are trying to stop relying on.

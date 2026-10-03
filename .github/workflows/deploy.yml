@@ -60,5 +60,5 @@ jobs:
       - name: Deploy to Cloudflare
         run: npx wrangler deploy
         env:
+          # Account id lives in wrangler.jsonc; this is the only secret needed.
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
