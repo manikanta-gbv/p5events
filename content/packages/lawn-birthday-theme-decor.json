@@ -1,0 +1,30 @@
+{
+  "title": "Lawn Birthday Theme Decor",
+  "category": "birthday",
+  "price": 9999,
+  "strikePrice": 11499,
+  "summary": "Lawn Birthday Theme with natural flowers, balloons, LED number and cake table",
+  "images": [
+    "/images/ ⁠lawn-birthday-theme.webp"
+  ],
+  "imageAlt": "Lawn Birthday Theme with natural flowers, balloons, LED number , 4 LED lights and cake table",
+  "inclusions": [
+    "1 × 4×8 U-Shape Frame with Balloons in Pink, Cream & Golden Chrome",
+    "Personalized Flex",
+    "LED Number 1",
+    "LED Number 1",
+    "Cake Table",
+    "4 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "terrace",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
