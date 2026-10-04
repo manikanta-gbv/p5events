@@ -1,0 +1,39 @@
+{
+  "title": "Hello Teddy Theme for 1st Birthday Party",
+  "category": "first-birthday",
+  "price": 29999,
+  "strikePrice": 33999,
+  "summary": "Hello Teddy Theme with 5 teddys, balloons, LED lights for one number, happy birthday light, cake table and lights.",
+  "images": [
+    "/images/hello-teddy-theme.webp"
+  ],
+  "imageAlt": "Hello Teddy Theme with 5 teddys, balloons (Arch), welcome board,  LED lights for one number, neon light, cake table",
+  "inclusions": [
+    "8×28 Background",
+    "5 Teddys as per Image",
+    "Wooden Frames",
+    "Picture-Perfect 4×7 Frames – 6",
+    "Wooden Moon",
+    "Balloon Decor (Sky Blue, Chrome Blue & Golden Yellow)",
+    "Happy Birthday Neon Light",
+    "6 Teddy Cutouts",
+    "1 LED Number",
+    "2 Round Boxes with Flex",
+    "LED Name Display – 2 Feet Letters",
+    "1 Table for Cake Cutting",
+    "Floor Flex Included – 28×10",
+    "Entrance Balloon Arch",
+    "2×3 Feet Foam Welcome Board",
+    "Focusing Lights to Highlight the Backdrop"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 4.5,
+  "featured": false,
+  "published": true
+}
