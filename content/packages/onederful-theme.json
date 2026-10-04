@@ -1,0 +1,33 @@
+{
+  "title": "Onederful Theme",
+  "category": "first-birthday",
+  "price": 13999,
+  "strikePrice": 15699,
+  "summary": "Onederful Theme with balloons, LED( name & age), cake table, artifical leafs, lights.",
+  "images": [
+    "/images/onederful-theme.webp"
+  ],
+  "imageAlt": "Onederful Theme with balloons, LED( name & age), cake table, artifical leafs, welcome board andlights.",
+  "inclusions": [
+    "12×8 Feet Themed Backdrop with Premium Flex & Baby Photos",
+    "Balloon Colours: Gold Chrome, Sky Blue & Sea Green",
+    "3 Round Cake Tables",
+    "LED Name Display",
+    "LED Age Number",
+    "1 Cake Table",
+    "Artificial Leaves",
+    "Focus Lighting to Highlight the Backdrop",
+    "2×3 Feet Welcome Board",
+    "Entrance Balloon Arch"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
