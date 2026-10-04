@@ -48,7 +48,7 @@
   },
   "filters": {
     "budgetMin": 1999,
-    "budgetMax": 25000,
+    "budgetMax": 30000,
     "palettes": [
       {
         "label": "Pastel",
@@ -113,7 +113,7 @@
     "symbol": "₹"
   },
   "openingHours": {
-    "note": "Days the team takes bookings. Leave blank to omit from search data.",
+    "closes": "",
     "days": [
       "Monday",
       "Tuesday",
@@ -123,7 +123,7 @@
       "Saturday",
       "Sunday"
     ],
-    "opens": "",
-    "closes": ""
+    "note": "Days the team takes bookings. Leave blank to omit from search data.",
+    "opens": ""
   }
 }
