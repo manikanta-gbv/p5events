@@ -1,0 +1,27 @@
+{
+  "title": "Wall Decor",
+  "category": "wall-backdrop",
+  "price": 2499,
+  "strikePrice": 3299,
+  "summary": "Wall Decor with balloons, foil letter, pink wall curtain.",
+  "images": [
+    "/images/wall-decor-pink.webp"
+  ],
+  "imageAlt": "Wall Decor with balloons, foil letter, pink wall curtain.",
+  "inclusions": [
+    "Half Balloon Arch in Light Pink & Dark Pink",
+    "Elegant “Happy Birthday” Paper Banner",
+    "Foil Letter",
+    "Pink Wall Curtain – Charming Backdrop"
+  ],
+  "venues": [
+    "home",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 1.5,
+  "featured": false,
+  "published": true
+}
