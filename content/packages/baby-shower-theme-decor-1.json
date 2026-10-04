@@ -1,0 +1,30 @@
+{
+  "title": "Baby Shower Theme Decor",
+  "category": "baby-shower",
+  "price": 7999,
+  "strikePrice": 9299,
+  "summary": "Baby Shower Decor with balloons, teddy, cake table and artificial leafs.",
+  "images": [
+    "/images/pink-baby-shower.webp"
+  ],
+  "imageAlt": "Baby Shower Decor with balloons, air balloons with teddy, cake table and artificial leafs.",
+  "inclusions": [
+    "1 × 4×8 U-Shape Frame with Balloons in Sky Blue, Cream & Golden Chrome",
+    "Personalized Flex",
+    "Air Balloon with Teddy",
+    "Baby Boxes",
+    "Cake Table",
+    "Artificial Leaves",
+    "2 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
