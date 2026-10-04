@@ -1,0 +1,31 @@
+{
+  "title": "Baby Shower Theme Decor",
+  "category": "baby-shower",
+  "price": 12999,
+  "strikePrice": 14799,
+  "summary": "Baby Shower Theme with balloons, teddy, welcome board, 4 LED lights.",
+  "images": [
+    "/images/baby-2shower.webp"
+  ],
+  "imageAlt": "Baby Shower Theme with balloons, air balloon with teddy, welcome board, 4 LED lights and cake table.",
+  "inclusions": [
+    "2 × 4×8 U-Shape Frames with Balloons in White, Cream & Rose Gold Chrome",
+    "Personalized Flex",
+    "Air Balloon with Teddy",
+    "Baby Boxes",
+    "Cake Table",
+    "2×3 Feet Welcome Board",
+    "4 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "terrace",
+    "home",
+    "banquet-hall"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
