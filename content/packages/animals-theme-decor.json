@@ -1,0 +1,34 @@
+{
+  "title": "Animals Theme Decor",
+  "category": "kids-theme",
+  "price": 16999,
+  "strikePrice": 18799,
+  "summary": "Animals Theme with balloons , 5 animal cutouts, LED name & age, welcome board, balloon Arch.",
+  "images": [
+    "/images/Animals-theme.webp"
+  ],
+  "imageAlt": "Animals Theme with balloons , 5 animal cutouts, LED name & age, welcome board, balloon Arch and lights.",
+  "inclusions": [
+    "20×8 Feet Backdrop with 5 U-Shape Frames",
+    "Balloon Colours: Gold Chrome, Pastel Green & Retro Brown",
+    "5 Animal Cutouts",
+    "3 Round Cake Tables",
+    "LED Name Display",
+    "LED Age Number",
+    "1 Cake Table",
+    "Artificial Leaves",
+    "Focus Lighting to Highlight the Backdrop",
+    "2×3 Feet Welcome Board",
+    "Entrance Balloon Arch"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
