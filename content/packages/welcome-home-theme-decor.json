@@ -1,0 +1,29 @@
+{
+  "title": "Welcome Home Theme Decor",
+  "category": "baby-shower",
+  "price": 7999,
+  "strikePrice": 8799,
+  "summary": "Welcome Home Theme with balloons, 4 Foil Balloon Pillars, Rose Petal Walkway , cake table and lights.",
+  "images": [
+    "/images/Welcom-home-theme.webp"
+  ],
+  "imageAlt": "Welcome Home Theme with balloons, 4 Foil Balloon Pillars, Rose Petal Walkway , cake table and lights.",
+  "inclusions": [
+    "1 × 4×8 U-Shape Frame with Balloons in Pink, Purple & Rose Gold Chrome",
+    "Personalized Flex",
+    "4 Foil Balloon Pillars",
+    "Rose Petal Walkway",
+    "1 Cake Table",
+    "20 Hall Balloon Bunches",
+    "2 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home"
+  ],
+  "palette": [
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
