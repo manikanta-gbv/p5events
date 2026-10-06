@@ -1,0 +1,29 @@
+{
+  "title": "Cricket Theme Ring Decor",
+  "category": "ring-decor",
+  "price": 4999,
+  "strikePrice": 6299,
+  "summary": "Cricket Theme Ring Decor with balloons, 1 cake table, 2 balloon pillars and 2 LED lights.",
+  "images": [
+    "/images/cricket-theme-ring.webp"
+  ],
+  "imageAlt": "Cricket Theme Ring Decor with balloons, 1 cake table, 2 balloon pillars and 2 LED lights.",
+  "inclusions": [
+    "6×6 Cricket-Themed Ring Backdrop with Premium Flex Print",
+    "Balloon Colours: Dark Blue, Pastel Blue & White",
+    "2 Balloon Pillars",
+    "1 Cake Table",
+    "2 LED Lights"
+  ],
+  "venues": [
+    "home",
+    "terrace"
+  ],
+  "palette": [
+    "bright",
+    "pastel"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
