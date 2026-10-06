@@ -1,0 +1,32 @@
+{
+  "title": "Batman Theme",
+  "category": "kids-theme",
+  "price": 8999,
+  "strikePrice": 10499,
+  "summary": "Batman Theme with balloons, 3 round cake boxes, LED age, welcome board and 4 LED lights.",
+  "images": [
+    "/images/batman-theme.webp"
+  ],
+  "imageAlt": "Batman Theme with balloons, 3 round cake boxes, LED age, welcome board and 4 LED lights.",
+  "inclusions": [
+    "2 × 4×8 U-Shape Frames with Balloons in Yellow, Blue & White",
+    "Personalized Flex",
+    "3 Round Cake Boxes with Flex",
+    "LED Age Number",
+    "2×3 Feet Welcome Board",
+    "4 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "terrace",
+    "restaurant",
+    "banquet-hall"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 2.5,
+  "featured": false,
+  "published": true
+}
