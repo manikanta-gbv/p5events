@@ -1,0 +1,33 @@
+{
+  "title": "Onederful Theme",
+  "category": "first-birthday",
+  "price": 11999,
+  "strikePrice": 13999,
+  "summary": "Onederful Theme with balloons, 3 round cake tables, LED name & age, wooden butterfly and entrance balloons arch.",
+  "images": [
+    "/images/Onederful-theme3.webp"
+  ],
+  "imageAlt": "Onederful Theme with balloons, 3 round cake tables, LED name & age, wooden butterfly and entrance balloons arch.",
+  "inclusions": [
+    "12×8 Feet U-Shape Themed Backdrop",
+    "Balloon Colours: Gold Chrome, Purple & Pink",
+    "3 Round Cake Tables",
+    "LED Name Letters",
+    "LED Age Number",
+    "Wooden Butterfly",
+    "Focus Lighting to Highlight the Backdrop",
+    "2×3 Feet Welcome Board",
+    "Entrance Balloon Arch"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "bright",
+    "pastel"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
