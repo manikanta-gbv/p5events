@@ -1,0 +1,38 @@
+{
+  "title": "Fairy Theme",
+  "category": "kids-theme",
+  "price": 13999,
+  "strikePrice": 15999,
+  "summary": "Fairy Theme with balloons, 1 cake table, neon light, LED name & age, 2 Fairy Cutouts, balloon arch and lights.",
+  "images": [
+    "/images/fairy-theme.webp"
+  ],
+  "imageAlt": "Fairy Theme with balloons, 1 cake table, neon light, LED name & age, 2 Fairy Cutouts, balloon arch and lights.",
+  "inclusions": [
+    "16×8 Feet U-Shape Themed Backdrop",
+    "Balloon Colours: Pastel Blue, Purple, Pink & Chrome",
+    "1 Cake Table",
+    "Happy Birthday Neon Board",
+    "Neon Number 1",
+    "LED Name Letters",
+    "LED Age Number",
+    "Balloon Railing at Front Stage",
+    "2 Fairy Cutouts",
+    "Focus Lighting to Highlight the Backdrop",
+    "2×3 Feet Welcome Board",
+    "Entrance Balloon Arch"
+  ],
+  "venues": [
+    "home",
+    "banquet-hall",
+    "terrace",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
