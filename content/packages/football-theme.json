@@ -1,0 +1,31 @@
+{
+  "title": "Football Theme",
+  "category": "kids-theme",
+  "price": 11999,
+  "strikePrice": 13999,
+  "summary": "Football Theme with balloons, 3 round cake boxes, LED age, welcome board and 4 LED lights.",
+  "images": [
+    "/images/football-theme.webp"
+  ],
+  "imageAlt": "Football Theme with balloons, 3 round cake boxes, LED age, welcome board and 4 LED lights.",
+  "inclusions": [
+    "2 × 4×8 U-Shape Frames with Balloons in Green, Red & Gold Chrome",
+    "Personalized Flex",
+    "1 Football-Themed Cutout",
+    "3 Round Cake Boxes with Flex",
+    "LED Age Number",
+    "2×3 Feet Welcome Board",
+    "4 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 3,
+  "featured": false,
+  "published": true
+}
