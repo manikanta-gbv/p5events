@@ -4,7 +4,7 @@
   // Not a secret — it is an account identifier, visible in every dashboard
   // URL, and grants nothing on its own. The API token is the credential.
   // Keeping it here means CI needs one secret instead of two.
-  "account_id": "f8c97edc15df9ff338c60ead975ba657",
+  "account_id": "9edc9a83d475ac506060052a82ed7e5e ",
   "compatibility_date": "2026-09-26",
 
   // This site is a static export (next.config.mjs sets output: 'export'), so
