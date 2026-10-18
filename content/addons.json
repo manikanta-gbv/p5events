@@ -1,8 +1,29 @@
 {
   "addons": [
-    { "slug": "photographer", "title": "Photographer · 2 hours", "price": 4500 },
-    { "slug": "cold-pyro", "title": "Cold pyro & fog entry", "price": 3000 },
-    { "slug": "character-visit", "title": "Character visit · 30 min", "price": 2500 },
-    { "slug": "photo-booth", "title": "360° photo booth · 2 hours", "price": 7999 }
+    {
+      "title": "Photographer · 3 hours",
+      "slug": "photographer",
+      "price": 4499
+    },
+    {
+      "title": "Cold pyro each",
+      "slug": "cold-pyro",
+      "price": 499
+    },
+    {
+      "title": "Character visit · 3 hrs",
+      "slug": "character-visit",
+      "price": 1999
+    },
+    {
+      "title": "360° photo booth · 3 hours",
+      "slug": "photo-booth",
+      "price": 7999
+    },
+    {
+      "title": "Fogg Entry (2 shorts)",
+      "slug": "fogg-entry",
+      "price": 3999
+    }
   ]
 }
