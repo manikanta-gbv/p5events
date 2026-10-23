@@ -1,0 +1,35 @@
+{
+  "title": "Underwater Theme Decor",
+  "category": "kids-theme",
+  "price": 18999,
+  "strikePrice": 21799,
+  "summary": "Underwater Theme Decor with balloons, 8 theme cutouts, LED age, Artificial Flowers, welcome board, Entrance Balloon Arch.",
+  "images": [
+    "/images/under-water.webp"
+  ],
+  "imageAlt": "Underwater Theme Decor with balloons, 8 theme cutouts, LED age, Artificial Flowers, welcome board, Entrance Balloon Arch.",
+  "inclusions": [
+    "20/8 Feet Flex Themed Backdrop",
+    "Balloon Colours: Blue, Purple, Pastel Green & Pink",
+    "Three Cake Tables with Flex",
+    "8 Theme Cutouts",
+    "LED Name Letters",
+    "LED Age Number",
+    "Floor Flex as per Image",
+    "Focus Lighting to Highlight the Backdrop",
+    "Welcome Board 2/3",
+    "Entrance Balloon Arch",
+    "Artificial Flowers Used for Decor"
+  ],
+  "venues": [
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 4,
+  "featured": false,
+  "published": true
+}
