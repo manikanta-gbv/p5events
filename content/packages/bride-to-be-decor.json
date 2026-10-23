@@ -1,0 +1,32 @@
+{
+  "title": "Bride-to-Be Decor",
+  "category": "bride-to-be",
+  "price": 6999,
+  "strikePrice": 8999,
+  "summary": "Bride-to-Be Decor with personalised flex, Artificial Flowers, Neon light, welcome board, 3 iron cake stands and focus light.",
+  "images": [
+    "/images/bride-to-be-decor.webp"
+  ],
+  "imageAlt": "Bride-to-Be Decor with personalised flex, Artificial Flowers, Neon light, welcome board, 3 iron cake stands and focus light.",
+  "inclusions": [
+    "6/6 Ring Decor with Personalised Theme Flex Print",
+    "Artificial Flowers Used for Decor as Shown in the Image",
+    "Neon Bride-to-Be Board",
+    "Welcome Board 2/3",
+    "3 Iron Cake Stands",
+    "Focus Light for Enhanced Ambiance"
+  ],
+  "venues": [
+    "home",
+    "banquet-hall",
+    "terrace",
+    "restaurant"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 2,
+  "featured": false,
+  "published": true
+}
