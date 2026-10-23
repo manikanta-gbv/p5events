@@ -1,0 +1,31 @@
+{
+  "title": "Astronaut Theme Decor",
+  "category": "birthday",
+  "price": 9999,
+  "strikePrice": 12499,
+  "summary": "Astronaut Theme Decor with balloons, LED age, welcome board, 4 LED lights.",
+  "images": [
+    "/images/astronaut-theme.webp"
+  ],
+  "imageAlt": "Astronaut Theme Decor with balloons, LED age, welcome board, 4 LED lights.",
+  "inclusions": [
+    "Two 4/8 U-Shape Frames with Balloons in Sky Blue, Purple, Parrot Green & Silver Chrome",
+    "Personalised Flex",
+    "Three Iron Cake Stands",
+    "LED Age Number",
+    "Welcome Board 2/3",
+    "4 LED Lights for Backdrop"
+  ],
+  "venues": [
+    "home",
+    "banquet-hall",
+    "terrace"
+  ],
+  "palette": [
+    "pastel",
+    "bright"
+  ],
+  "setupHours": 2.5,
+  "featured": false,
+  "published": true
+}
